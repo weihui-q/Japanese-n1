@@ -1,5 +1,6 @@
 ﻿import { useState, useEffect } from 'react';
 import { useAppStore } from '../store/appStore';
+import { getGrammarReading } from '../utils/japanese';
 import type { Word, Grammar } from '../types';
 
 type QuizType = 'words' | 'grammar' | 'all';
@@ -31,42 +32,6 @@ export default function QuizPage() {
   const [questionHistory, setQuestionHistory] = useState<QuestionData[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [score, setScore] = useState({ correct: 0, total: 0 });
-
-  const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-  const getQuestionExample = (question: QuestionData) => {
-    let example = '';
-    let translation = '';
-    let meaning = '';
-    let blankTarget = '';
-
-    if (question.type === 'word') {
-      const word = question.item as Word;
-      const meaningInfo = question.selectedMeaning ?? word.meanings[0] ?? { meaning: '', example: '', exampleTranslation: '' };
-      example = meaningInfo.example ? meaningInfo.example.replace('{kanji}', word.kanji) : `${word.kanji}は...`;
-      translation = meaningInfo.exampleTranslation ? meaningInfo.exampleTranslation.replace('{kanji}', word.kanji) : '';
-      meaning = meaningInfo.meaning || word.meanings[0]?.meaning || '';
-      blankTarget = word.kanji;
-    } else {
-      const grammarItem = question.item as Grammar;
-      example = grammarItem.examples[0]?.japanese || `${grammarItem.pattern}...`;
-      translation = grammarItem.examples[0]?.translation || '';
-      meaning = grammarItem.meaning;
-      blankTarget = grammarItem.pattern.replace('〜', '').trim() || grammarItem.pattern;
-    }
-
-    const blankedExample = example.replace(new RegExp(escapeRegExp(blankTarget), 'g'), '_____');
-    const answer = question.type === 'word'
-      ? (question.item as Word).kanji
-      : (question.item as Grammar).pattern;
-
-    return {
-      blankedExample,
-      translation,
-      meaning,
-      answer
-    };
-  };
 
   const generateQuestion = () => {
     let availableItems: Array<{ item: Word | Grammar; type: 'word' | 'grammar' }> = [];
@@ -148,12 +113,6 @@ export default function QuizPage() {
     generateQuestion();
   }, [words, grammar, quizType]);
 
-  const handleSkip = () => {
-    const currentQuestion = questionHistory[currentQuestionIndex];
-    if (currentQuestion?.answered) return;
-    generateQuestion();
-  };
-
   const goToPreviousQuestion = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
@@ -211,8 +170,6 @@ export default function QuizPage() {
   }
 
   const currentQuestion = questionHistory[currentQuestionIndex];
-
-  const questionExample = currentQuestion ? getQuestionExample(currentQuestion) : null;
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
@@ -281,9 +238,10 @@ export default function QuizPage() {
               {currentQuestion.type === 'word' ? (
                 // 单词：显示 kanji，选择中文意思
                 <div className="text-center mb-4">
-                  <div className="text-2xl md:text-3xl font-bold mb-3">
+                  <div className="text-2xl md:text-3xl font-bold mb-1">
                     {(currentQuestion.item as Word).kanji}
                   </div>
+                  <div className="text-sm text-white/60 mb-3">読み: {(currentQuestion.item as Word).kana}</div>
                   {currentQuestion.answered && currentQuestion.selectedMeaning && (
                     <div className="text-sm opacity-80 bg-white/10 rounded-2xl p-4 mx-auto max-w-2xl">
                       <strong>{currentQuestion.selectedMeaning.meaning}</strong>
@@ -299,9 +257,12 @@ export default function QuizPage() {
               ) : (
                 // 语法：显示文法形式，选择中文意思
                 <div className="text-center mb-4">
-                  <div className="text-2xl md:text-3xl font-bold mb-3">
+                  <div className="text-2xl md:text-3xl font-bold mb-1">
                     {(currentQuestion.item as Grammar).pattern}
                   </div>
+                  {getGrammarReading((currentQuestion.item as Grammar).pattern) && (
+                    <div className="text-sm text-white/60 mb-3">読み: {getGrammarReading((currentQuestion.item as Grammar).pattern)}</div>
+                  )}
                   {currentQuestion.answered && (
                     <div className="text-sm opacity-80 bg-white/10 rounded-2xl p-4 mx-auto max-w-2xl">
                       <strong>{(currentQuestion.item as Grammar).meaning}</strong>

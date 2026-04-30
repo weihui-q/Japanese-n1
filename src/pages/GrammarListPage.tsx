@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useAppStore } from '../store/appStore';
+import { getGrammarReading } from '../utils/japanese';
 import type { Grammar } from '../types';
 
 const HIRAGANA_INDEX = [
@@ -69,27 +70,14 @@ export default function GrammarListPage() {
   }, [grammar, searchTerm, selectedCategory, selectedKana]);
 
   return (
-    <div className="space-y-5 h-full overflow-y-auto scrollbar-custom pb-6">
-      <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <div>
-          <h1 className="text-4xl font-bold text-white">文法一覧</h1>
-          <p className="text-sm text-white/60 mt-1">分類で絞り込みできます</p>
-        </div>
+    <div className="space-y-6 h-full overflow-y-auto scrollbar-custom pb-6">
+      <h1 className="text-4xl font-bold text-white mb-6">文法一覧</h1>
 
-        <input
-          type="text"
-          placeholder="文法を検索..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full md:w-80 px-4 py-2 rounded-lg bg-white/15 text-white placeholder-white/50 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white/30"
-        />
-      </div>
-
-      <div className="bg-white/10 rounded-2xl p-4 space-y-3">
-        <div className="text-sm text-white/70">五十音索引</div>
-        <div className="space-y-2">
+      {/* 五十音インデックス */}
+      <div className="bg-white/10 backdrop-blur-md rounded-xl p-4">
+        <div className="space-y-1">
           {HIRAGANA_INDEX.map((row, rowIndex) => (
-            <div key={rowIndex} className="flex gap-1 flex-wrap justify-center">
+            <div key={rowIndex} className="flex gap-1 justify-center">
               {row.map((kana) => {
                 const count = grammar.filter(g => getGrammarStartKana(g.pattern) === kana).length;
                 const isActive = selectedKana === kana;
@@ -98,16 +86,17 @@ export default function GrammarListPage() {
                     key={kana}
                     type="button"
                     onClick={() => setSelectedKana(isActive ? '' : kana)}
-                    className={`py-2 px-3 rounded-lg text-sm transition ${
+                    className={`flex-1 max-w-[60px] py-2 px-1 rounded-lg transition-all text-sm font-medium ${
                       isActive
-                        ? 'bg-white/30 text-white'
+                        ? 'bg-white/40 text-white scale-110'
                         : count > 0
-                        ? 'bg-white/10 text-white/70 hover:bg-white/20'
+                        ? 'bg-white/15 text-white/90 hover:bg-white/25'
                         : 'bg-white/5 text-white/30 cursor-not-allowed'
                     }`}
                     disabled={count === 0}
                   >
-                    {kana}
+                    <div>{kana}</div>
+                    {count > 0 && <div className="text-xs opacity-60">{count}</div>}
                   </button>
                 );
               })}
@@ -115,43 +104,70 @@ export default function GrammarListPage() {
           ))}
         </div>
         {selectedKana && (
-          <div className="text-center">
+          <div className="mt-3 text-center">
             <button
               type="button"
               onClick={() => setSelectedKana('')}
               className="text-sm text-white/70 hover:text-white underline"
             >
-              フィルターをクリア ({selectedKana})
+              フィルターをクリア (選択中: {selectedKana}行)
             </button>
           </div>
         )}
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        <button
-          type="button"
-          onClick={() => setSelectedCategory('')}
-          className={`text-sm px-3 py-1 rounded-full transition ${!selectedCategory ? 'bg-white/30 text-white' : 'bg-white/10 text-white/70 hover:bg-white/20'}`}
-        >
-          全部类别
-        </button>
-        {categories.map((category) => (
+      {/* 検索・フィルター */}
+      <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 space-y-4">
+        <input
+          type="text"
+          placeholder="文法を検索..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full px-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
+        />
+
+        <div className="flex gap-2 flex-wrap">
           <button
-            key={category}
             type="button"
-            onClick={() => setSelectedCategory(category)}
-            className={`text-sm px-3 py-1 rounded-full transition ${selectedCategory === category ? 'bg-white/30 text-white' : 'bg-white/10 text-white/70 hover:bg-white/20'}`}
+            onClick={() => setSelectedCategory('')}
+            className={`px-4 py-2 rounded-lg transition-all ${
+              !selectedCategory ? 'bg-white/30 text-white' : 'bg-white/10 text-white/70 hover:bg-white/20'
+            }`}
           >
-            {category}
+            全て
           </button>
-        ))}
+          {categories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 rounded-lg transition-all ${
+                selectedCategory === category ? 'bg-white/30 text-white' : 'bg-white/10 text-white/70 hover:bg-white/20'
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
 
+      {/* 結果数表示 */}
+      <div className="text-white/80 text-sm">
+        {filteredGrammar.length}件 の文法が見つかりました
+      </div>
+
+      {/* 文法リスト - 3列グリッド */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {filteredGrammar.map((g) => (
           <GrammarCard key={g.id} grammar={g} />
         ))}
       </div>
+
+      {filteredGrammar.length === 0 && (
+        <div className="text-center text-white/70 py-12">
+          該当する文法が見つかりません
+        </div>
+      )}
     </div>
   );
 }
@@ -177,6 +193,9 @@ function GrammarCard({ grammar }: { grammar: Grammar }) {
       <div className="flex items-center justify-between gap-3">
         <div>
           <h3 className="text-xl font-semibold leading-tight">{grammar.pattern}</h3>
+          {getGrammarReading(grammar.pattern) && (
+            <p className="text-xs text-white/60 mt-1">読み: {getGrammarReading(grammar.pattern)}</p>
+          )}
           <p className="text-sm text-white/80 mt-1 line-clamp-2">{grammar.meaning}</p>
         </div>
         <span className="text-xs bg-white/10 px-2 py-1 rounded-full text-white/80">{grammar.category}</span>
