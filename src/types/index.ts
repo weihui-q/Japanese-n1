@@ -12,6 +12,7 @@ export interface Word {
   category: string;     // 分類
   difficulty: number;   // 難易度 1-5
   tags: string[];       // タグ
+  partOfSpeech?: string; // 品詞
 }
 
 // 文法データ構造

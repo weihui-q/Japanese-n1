@@ -18,24 +18,25 @@ function matchesKanaIndex(kana: string, selectedKana: string): boolean {
 }
 
 function deriveWordPartOfSpeech(word: Word): string {
-  const kana = word.kana;
-  const meaningText = word.meanings.map(m => m.meaning).join(' ');
+  if (word.partOfSpeech) {
+    return word.partOfSpeech;
+  }
 
-  if (kana.endsWith('する') || meaningText.includes('する') || meaningText.includes('做')) {
-    return '動詞';
+  const kana = word.kana;
+  if (!kana) {
+    return '名詞';
   }
-  if (kana.endsWith('ない') || kana.endsWith('ます') || kana.endsWith('た') || kana.endsWith('ない')) {
-    return '動詞';
-  }
-  if (kana.endsWith('い') && !kana.endsWith('しい') && !kana.endsWith('かい')) {
+
+  if (kana.endsWith('い')) {
     return '形容詞';
   }
-  if (kana.endsWith('く') || kana.endsWith('に')) {
+  if (kana.endsWith('に')) {
     return '副詞';
   }
-  if (kana.endsWith('な')) {
-    return '形容動詞';
+  if (kana.endsWith('する') || kana.endsWith('ない') || kana.endsWith('ます') || kana.endsWith('た')) {
+    return '動詞';
   }
+
   return '名詞';
 }
 
