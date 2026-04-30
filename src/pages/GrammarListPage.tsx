@@ -15,6 +15,34 @@ function getGrammarStartKana(pattern: string) {
   return cleaned[0] || '';
 }
 
+function mapGrammarCategory(category: string) {
+  if (/時間|時点|経過|場面|終点|起點/.test(category)) {
+    return '時間・場面';
+  }
+  if (/原因|理由|根拠|関連|対応/.test(category)) {
+    return '原因・理由';
+  }
+  if (/条件|仮定|譲歩|逆接/.test(category)) {
+    return '条件・仮定';
+  }
+  if (/否定|限定|非限定|不必要/.test(category)) {
+    return '否定・限定';
+  }
+  if (/対比|比況|並列|付加|例示/.test(category)) {
+    return '対比・付加';
+  }
+  if (/強調|評価|判断|立場|感情/.test(category)) {
+    return '強調・評価';
+  }
+  if (/可能|義務|強制|目的|手段|禁止|意図/.test(category)) {
+    return '可能・義務';
+  }
+  if (/様子|状態|付帯|対象/.test(category)) {
+    return '様子・状態';
+  }
+  return 'その他';
+}
+
 export default function GrammarListPage() {
   const grammar = useAppStore(state => state.grammar);
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,13 +50,14 @@ export default function GrammarListPage() {
   const [selectedKana, setSelectedKana] = useState('');
 
   const categories = useMemo(
-    () => Array.from(new Set(grammar.map(g => g.category))).sort(),
+    () => Array.from(new Set(grammar.map(g => mapGrammarCategory(g.category)))).sort(),
     [grammar]
   );
 
   const filteredGrammar = useMemo(() => {
     return grammar.filter(g => {
-      const matchesCategory = !selectedCategory || g.category === selectedCategory;
+      const categoryGroup = mapGrammarCategory(g.category);
+      const matchesCategory = !selectedCategory || categoryGroup === selectedCategory;
       const matchesKana =
         !selectedKana || getGrammarStartKana(g.pattern) === selectedKana;
       const matchesSearch =

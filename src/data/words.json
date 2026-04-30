@@ -34,7 +34,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w002",
@@ -372,7 +372,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w021",
@@ -389,7 +389,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w022",
@@ -640,7 +640,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w035",
@@ -696,7 +696,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "副詞"
   },
   {
     "id": "w038",
@@ -769,7 +769,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w042",
@@ -927,7 +927,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w051",
@@ -961,7 +961,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w053",
@@ -995,7 +995,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w055",
@@ -1029,7 +1029,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w057",
@@ -1214,7 +1214,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w067",
@@ -1321,7 +1321,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w073",
@@ -1338,7 +1338,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w074",
@@ -1355,7 +1355,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w075",
@@ -1372,7 +1372,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w076",
@@ -1470,7 +1470,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w080",
@@ -1492,7 +1492,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w081",
@@ -1509,7 +1509,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w082",
@@ -1526,7 +1526,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w083",
@@ -1560,7 +1560,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w085",
@@ -1687,7 +1687,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w091",
@@ -1736,7 +1736,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "動詞"
   },
   {
     "id": "w093",
@@ -1780,7 +1780,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w095",
@@ -2102,7 +2102,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w111",
@@ -2119,7 +2119,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w112",
@@ -2163,7 +2163,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w114",
@@ -2180,7 +2180,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w115",
@@ -2214,7 +2214,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w117",
@@ -2292,7 +2292,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w121",
@@ -2467,7 +2467,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w131",
@@ -2528,7 +2528,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w134",
@@ -2584,7 +2584,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w137",
@@ -2628,7 +2628,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w139",
@@ -2689,7 +2689,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "副詞"
   },
   {
     "id": "w142",
@@ -2728,7 +2728,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w144",
@@ -2940,7 +2940,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w155",
@@ -2991,7 +2991,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w158",
@@ -3008,7 +3008,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w159",
@@ -3093,7 +3093,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w164",
@@ -3144,7 +3144,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w167",
@@ -3178,7 +3178,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w169",
@@ -3246,7 +3246,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "動詞"
   },
   {
     "id": "w173",
@@ -3278,7 +3278,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w174",
@@ -3368,7 +3368,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w179",
@@ -3385,7 +3385,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w180",
@@ -3402,7 +3402,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w181",
@@ -3436,7 +3436,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w183",
@@ -3470,7 +3470,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w185",
@@ -3628,7 +3628,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w194",
@@ -3662,7 +3662,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w196",
@@ -4144,7 +4144,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w222",
@@ -4161,7 +4161,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w223",
@@ -4183,7 +4183,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w224",
@@ -4205,7 +4205,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w225",
@@ -4222,7 +4222,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w226",
@@ -4256,7 +4256,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w228",
@@ -4273,7 +4273,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w229",
@@ -4290,7 +4290,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w230",
@@ -4307,7 +4307,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w231",
@@ -4341,7 +4341,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w233",
@@ -4358,7 +4358,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w234",
@@ -4375,7 +4375,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w235",
@@ -4392,7 +4392,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w236",
@@ -4409,7 +4409,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w237",
@@ -4431,7 +4431,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w238",
@@ -4616,7 +4616,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w248",
@@ -4711,7 +4711,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w253",
@@ -4762,7 +4762,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w256",
@@ -4779,7 +4779,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w257",
@@ -4813,7 +4813,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w259",
@@ -5018,7 +5018,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w269",
@@ -5040,7 +5040,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w270",
@@ -5150,7 +5150,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w275",
@@ -5467,7 +5467,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容詞"
   },
   {
     "id": "w291",
@@ -5611,7 +5611,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w298",
@@ -5628,7 +5628,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w299",
@@ -5667,7 +5667,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w301",
@@ -5684,7 +5684,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w302",
@@ -5701,7 +5701,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w303",
@@ -5718,7 +5718,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w304",
@@ -5930,7 +5930,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w315",
@@ -5952,7 +5952,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w316",
@@ -6110,7 +6110,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w325",
@@ -6127,7 +6127,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w326",
@@ -6171,7 +6171,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w328",
@@ -6188,7 +6188,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w329",
@@ -6256,7 +6256,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w333",
@@ -6368,7 +6368,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w339",
@@ -6650,7 +6650,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w355",
@@ -6701,7 +6701,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w358",
@@ -6718,7 +6718,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w359",
@@ -6735,7 +6735,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w360",
@@ -7151,7 +7151,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w383",
@@ -7168,7 +7168,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "動詞"
   },
   {
     "id": "w384",
@@ -7219,7 +7219,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w387",
@@ -7253,7 +7253,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w389",
@@ -7270,7 +7270,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w390",
@@ -7365,7 +7365,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w395",
@@ -7382,7 +7382,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w396",
@@ -7404,7 +7404,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w397",
@@ -7633,7 +7633,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w409",
@@ -7760,7 +7760,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w415",
@@ -7833,7 +7833,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w419",
@@ -7850,7 +7850,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w420",
@@ -7889,7 +7889,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w422",
@@ -7906,7 +7906,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w423",
@@ -7923,7 +7923,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w424",
@@ -7940,7 +7940,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w425",
@@ -7974,7 +7974,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w427",
@@ -7996,7 +7996,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w428",
@@ -8013,7 +8013,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w429",
@@ -8069,7 +8069,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w432",
@@ -8086,7 +8086,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w433",
@@ -8108,7 +8108,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w434",
@@ -8125,7 +8125,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w435",
@@ -8142,7 +8142,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w436",
@@ -8210,7 +8210,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "その他"
   },
   {
     "id": "w440",
@@ -8227,7 +8227,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w441",
@@ -8261,7 +8261,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w443",
@@ -8405,7 +8405,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w450",
@@ -8439,7 +8439,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w452",
@@ -8734,7 +8734,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w467",
@@ -8812,7 +8812,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w471",
@@ -8890,7 +8890,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w475",
@@ -9090,7 +9090,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "副詞"
   },
   {
     "id": "w485",
@@ -9146,7 +9146,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w488",
@@ -9251,7 +9251,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "その他"
   },
   {
     "id": "w493",
@@ -9285,7 +9285,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "動詞"
   },
   {
     "id": "w495",
@@ -9302,7 +9302,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w496",
@@ -9392,7 +9392,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w501",
@@ -9426,7 +9426,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w503",
@@ -9465,7 +9465,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w505",
@@ -9499,7 +9499,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w507",
@@ -9572,7 +9572,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w511",
@@ -9589,7 +9589,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w512",
@@ -9633,7 +9633,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w514",
@@ -9667,7 +9667,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w516",
@@ -9723,7 +9723,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w519",
@@ -9796,7 +9796,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w523",
@@ -9847,7 +9847,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w526",
@@ -9864,7 +9864,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w527",
@@ -9881,7 +9881,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w528",
@@ -9898,7 +9898,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w529",
@@ -9915,7 +9915,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w530",
@@ -9932,7 +9932,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w531",
@@ -10027,7 +10027,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w536",
@@ -10117,7 +10117,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w541",
@@ -10200,7 +10200,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w545",
@@ -10234,7 +10234,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w547",
@@ -10251,7 +10251,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w548",
@@ -10429,7 +10429,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "副詞"
   },
   {
     "id": "w557",
@@ -10463,7 +10463,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w559",
@@ -10502,7 +10502,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w561",
@@ -10529,7 +10529,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w562",
@@ -10617,7 +10617,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w566",
@@ -10634,7 +10634,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w567",
@@ -10685,7 +10685,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w570",
@@ -10719,7 +10719,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w572",
@@ -10802,7 +10802,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w576",
@@ -11077,7 +11077,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w591",
@@ -11094,7 +11094,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w592",
@@ -11145,7 +11145,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w595",
@@ -11162,7 +11162,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w596",
@@ -11179,7 +11179,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w597",
@@ -11196,7 +11196,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w598",
@@ -11374,7 +11374,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w607",
@@ -11413,7 +11413,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w609",
@@ -11486,7 +11486,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w613",
@@ -11503,7 +11503,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w614",
@@ -11642,7 +11642,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w621",
@@ -11856,7 +11856,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w633",
@@ -11873,7 +11873,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w634",
@@ -11958,7 +11958,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w639",
@@ -12092,7 +12092,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "動詞"
   },
   {
     "id": "w646",
@@ -12143,7 +12143,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w649",
@@ -12289,7 +12289,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w657",
@@ -12345,7 +12345,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w660",
@@ -12608,7 +12608,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w674",
@@ -12625,7 +12625,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w675",
@@ -12730,7 +12730,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w680",
@@ -12747,7 +12747,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w681",
@@ -12781,7 +12781,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w683",
@@ -12815,7 +12815,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w685",
@@ -12832,7 +12832,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "形容動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w686",
@@ -12949,7 +12949,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w692",
@@ -13068,7 +13068,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "名詞"
+    "partOfSpeech": "動詞"
   },
   {
     "id": "w699",
@@ -13153,7 +13153,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w704",
@@ -13238,7 +13238,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "副詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w709",
@@ -13447,7 +13447,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w721",
@@ -13508,7 +13508,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w724",
@@ -13542,7 +13542,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w726",
@@ -13632,7 +13632,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "動詞"
+    "partOfSpeech": "形容動詞"
   },
   {
     "id": "w731",
@@ -13800,7 +13800,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "動詞"
   },
   {
     "id": "w740",
@@ -13834,7 +13834,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w742",
@@ -13851,7 +13851,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w743",
@@ -13868,7 +13868,7 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "名詞"
   },
   {
     "id": "w744",
@@ -13912,6 +13912,6 @@
     "category": "N1核心",
     "difficulty": 3,
     "tags": [],
-    "partOfSpeech": "その他"
+    "partOfSpeech": "動詞"
   }
 ]
