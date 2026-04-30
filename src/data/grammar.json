@@ -1,0 +1,2604 @@
+[
+  {
+    "id": "g001",
+    "pattern": "〜にもかかわらず",
+    "meaning": "尽管...但是...",
+    "explanation": "表示前后项相反,尽管有前项的情况,但还是出现了后项的结果。",
+    "examples": [
+      {
+        "japanese": "雨が降っていたにもかかわらず、彼は外出した。",
+        "translation": "尽管下着雨,他还是外出了。"
+      },
+      {
+        "japanese": "勉強しなかったにもかかわらず、試験に合格した。",
+        "translation": "尽管没学习,但考试还是及格了。"
+      }
+    ],
+    "level": "N1",
+    "category": "譲歩",
+    "tags": [
+      "逆接",
+      "譲歩"
+    ]
+  },
+  {
+    "id": "g002",
+    "pattern": "〜に伴って",
+    "meaning": "伴随着...;随着...",
+    "explanation": "表示随着前项的变化,后项也发生变化。",
+    "examples": [
+      {
+        "japanese": "人口の増加に伴って、環境問題が深刻化した。",
+        "translation": "随着人口的增加,环境问题变得严重了。"
+      },
+      {
+        "japanese": "技術の発展に伴って、生活が便利になった。",
+        "translation": "随着技术的发展,生活变得便利了。"
+      }
+    ],
+    "level": "N1",
+    "category": "変化",
+    "tags": [
+      "変化",
+      "関係"
+    ]
+  },
+  {
+    "id": "g003",
+    "pattern": "〜に基づいて",
+    "meaning": "根据...;基于...",
+    "explanation": "表示以前项作为判断、行动的基础或依据。",
+    "examples": [
+      {
+        "japanese": "事実に基づいて判断する。",
+        "translation": "根据事实进行判断。"
+      },
+      {
+        "japanese": "法律に基づいて処罰する。",
+        "translation": "根据法律进行处罚。"
+      }
+    ],
+    "level": "N1",
+    "category": "根拠",
+    "tags": [
+      "判断",
+      "基準"
+    ]
+  },
+  {
+    "id": "g004",
+    "pattern": "〜を通じて",
+    "meaning": "通过...;经由...",
+    "explanation": "表示通过某种手段、方法或媒介。",
+    "examples": [
+      {
+        "japanese": "インターネットを通じて情報を得る。",
+        "translation": "通过互联网获取信息。"
+      },
+      {
+        "japanese": "友人を通じて知り合った。",
+        "translation": "通过朋友认识的。"
+      }
+    ],
+    "level": "N1",
+    "category": "手段",
+    "tags": [
+      "方法",
+      "媒介"
+    ]
+  },
+  {
+    "id": "g005",
+    "pattern": "〜に違いない",
+    "meaning": "一定是...;肯定是...",
+    "explanation": "表示非常有把握的推测。",
+    "examples": [
+      {
+        "japanese": "彼は合格したに違いない。",
+        "translation": "他肯定及格了。"
+      },
+      {
+        "japanese": "この問題は難しいに違いない。",
+        "translation": "这个问题一定很难。"
+      }
+    ],
+    "level": "N1",
+    "category": "推量",
+    "tags": [
+      "推測",
+      "確信"
+    ]
+  },
+  {
+    "id": "g006",
+    "pattern": "〜わけにはいかない",
+    "meaning": "不能...;不可以...",
+    "explanation": "表示从常识、社会规范等考虑,不能做某事。",
+    "examples": [
+      {
+        "japanese": "約束を破るわけにはいかない。",
+        "translation": "不能违背诺言。"
+      },
+      {
+        "japanese": "今やめるわけにはいかない。",
+        "translation": "现在不能放弃。"
+      }
+    ],
+    "level": "N1",
+    "category": "義務・禁止",
+    "tags": [
+      "規範",
+      "義務"
+    ]
+  },
+  {
+    "id": "g007",
+    "pattern": "〜に即して",
+    "meaning": "根据...;适应...",
+    "explanation": "表示根据前项的内容、状况等来做后项。",
+    "examples": [
+      {
+        "japanese": "实际情况に即して計画を立てる。",
+        "translation": "根据实际情况制定计划。"
+      },
+      {
+        "japanese": "法律に即して判断する。",
+        "translation": "根据法律进行判断。"
+      }
+    ],
+    "level": "N1",
+    "category": "基準",
+    "tags": [
+      "適合",
+      "基準"
+    ]
+  },
+  {
+    "id": "g008",
+    "pattern": "〜をめぐって",
+    "meaning": "围绕...;关于...",
+    "explanation": "表示围绕某个话题、问题展开讨论、争论等。",
+    "examples": [
+      {
+        "japanese": "環境問題をめぐって議論する。",
+        "translation": "围绕环境问题进行讨论。"
+      },
+      {
+        "japanese": "領土問題をめぐって対立する。",
+        "translation": "围绕领土问题产生对立。"
+      }
+    ],
+    "level": "N1",
+    "category": "話題",
+    "tags": [
+      "議論",
+      "対立"
+    ]
+  },
+  {
+    "id": "g009",
+    "pattern": "〜ものの",
+    "meaning": "虽然...但是...",
+    "explanation": "表示前项事实存在，后项与前项相反或是期待之外的结果。",
+    "examples": [
+      {
+        "japanese": "約束したものの、準備が間に合わなかった。",
+        "translation": "虽然约好了，但准备来不及了。"
+      },
+      {
+        "japanese": "説明は聞いたものの、よく理解できなかった。",
+        "translation": "虽然听了说明，但没能很好理解。"
+      }
+    ],
+    "level": "N1",
+    "category": "逆接",
+    "tags": [
+      "譲歩",
+      "逆接"
+    ]
+  },
+  {
+    "id": "g010",
+    "pattern": "〜どころか",
+    "meaning": "哪里是...反而...",
+    "explanation": "用于表示与前项完全相反的后项，强调程度更甚或情况更差。",
+    "examples": [
+      {
+        "japanese": "彼は疲れているどころか、元気そうだった。",
+        "translation": "他哪里是累了，反而看起来很精神。"
+      },
+      {
+        "japanese": "問題は解決どころか、むしろ悪化している。",
+        "translation": "问题哪里是解决了，反而更恶化了。"
+      }
+    ],
+    "level": "N1",
+    "category": "逆接",
+    "tags": [
+      "強調",
+      "対比"
+    ]
+  },
+  {
+    "id": "g011",
+    "pattern": "〜にしては",
+    "meaning": "就...来说...",
+    "explanation": "表示与前项的身份、情况、标准相比，结果出乎意料。",
+    "examples": [
+      {
+        "japanese": "彼にしてはよくやった。",
+        "translation": "就他而言，做得不错。"
+      },
+      {
+        "japanese": "初心者にしては上手に描けた。",
+        "translation": "作为初学者画得很不错。"
+      }
+    ],
+    "level": "N1",
+    "category": "判断",
+    "tags": [
+      "比較",
+      "意外"
+    ]
+  },
+  {
+    "id": "g012",
+    "pattern": "〜にしたら",
+    "meaning": "就...立场来说...",
+    "explanation": "表示从某个主体的立场、视角来看所做的判断或感受。",
+    "examples": [
+      {
+        "japanese": "親にしたら子どもはいつまでも心配だ。",
+        "translation": "就父母来说，孩子永远令人担心。"
+      },
+      {
+        "japanese": "彼にしたらそれが正しい選択だろう。",
+        "translation": "就他来说，那应该是正确的选择。"
+      }
+    ],
+    "level": "N1",
+    "category": "立場",
+    "tags": [
+      "視点",
+      "判断"
+    ]
+  },
+  {
+    "id": "g013",
+    "pattern": "〜に応じて",
+    "meaning": "根据...;随...而...",
+    "explanation": "表示随着前项的变化，后项也相应变化或调整。",
+    "examples": [
+      {
+        "japanese": "能力に応じて仕事を任せる。",
+        "translation": "根据能力分配工作。"
+      },
+      {
+        "japanese": "人数に応じて席を用意する。",
+        "translation": "根据人数准备座位。"
+      }
+    ],
+    "level": "N1",
+    "category": "変化",
+    "tags": [
+      "調整",
+      "基準"
+    ]
+  },
+  {
+    "id": "g014",
+    "pattern": "〜おそれがある",
+    "meaning": "有...的危险;可能...",
+    "explanation": "表示某种不好的结果有发生的可能性，带有警告意味。",
+    "examples": [
+      {
+        "japanese": "台風で被害が出るおそれがある。",
+        "translation": "有可能因台风造成损害。"
+      },
+      {
+        "japanese": "このままだと失敗するおそれがある。",
+        "translation": "照这样下去有失败的危险。"
+      }
+    ],
+    "level": "N1",
+    "category": "推量",
+    "tags": [
+      "危険",
+      "予測"
+    ]
+  },
+  {
+    "id": "g015",
+    "pattern": "〜としたら",
+    "meaning": "如果...的话...",
+    "explanation": "表示假设某种情况成立，然后进行推测或讨论。",
+    "examples": [
+      {
+        "japanese": "彼が来ないとしたら、予定を変えよう。",
+        "translation": "如果他不来，就改变计划。"
+      },
+      {
+        "japanese": "あの事件が本当だとしたら、大変だ。",
+        "translation": "如果那件事是真的，就糟了。"
+      }
+    ],
+    "level": "N1",
+    "category": "仮定",
+    "tags": [
+      "条件",
+      "推測"
+    ]
+  },
+  {
+    "id": "g016",
+    "pattern": "〜でたまらない",
+    "meaning": "非常...;忍不住...",
+    "explanation": "表示程度非常强烈，感情或感觉难以忍受。",
+    "examples": [
+      {
+        "japanese": "会いたくてたまらない。",
+        "translation": "非常想见你。"
+      },
+      {
+        "japanese": "暑くてたまらない。",
+        "translation": "热得受不了。"
+      }
+    ],
+    "level": "N1",
+    "category": "感情",
+    "tags": [
+      "強調",
+      "感覚"
+    ]
+  },
+  {
+    "id": "g017",
+    "pattern": "〜あっての",
+    "meaning": "有…才有",
+    "explanation": "用于表示有…才有。",
+    "examples": [
+      {
+        "japanese": "みんなの協力あっての成功だ。",
+        "translation": "正是因为大家的合作才有成功。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g018",
+    "pattern": "〜いかんだ / 〜いかんでは / 〜いかんによっては",
+    "meaning": "根據…的情況",
+    "explanation": "用于表示根據…的情況。",
+    "examples": [
+      {
+        "japanese": "成績のいかんだによって、進学先が決まる。",
+        "translation": "根据成绩的情况决定升学去向。"
+      }
+    ],
+    "level": "N1",
+    "category": "関連・対応",
+    "tags": [
+      "関連",
+      "対応"
+    ]
+  },
+  {
+    "id": "g019",
+    "pattern": "〜いかんに関わらず / 〜いかんによらず / 〜いかんを問わず",
+    "meaning": "無論…都…",
+    "explanation": "用于表示無論…都…。",
+    "examples": [
+      {
+        "japanese": "天候のいかんによらず、試合は開催される。",
+        "translation": "无论天气如何，比赛都将举行。"
+      }
+    ],
+    "level": "N1",
+    "category": "無関係・除外",
+    "tags": [
+      "無関係",
+      "除外"
+    ]
+  },
+  {
+    "id": "g020",
+    "pattern": "〜かたがた",
+    "meaning": "順便、兼做…",
+    "explanation": "用于表示順便、兼做…。",
+    "examples": [
+      {
+        "japanese": "買い物かたがた郵便局にも寄った。",
+        "translation": "顺便买东西，也去了邮局。"
+      }
+    ],
+    "level": "N1",
+    "category": "付帯状態・非付帯状態",
+    "tags": [
+      "付帯状態",
+      "非付帯状態"
+    ]
+  },
+  {
+    "id": "g021",
+    "pattern": "〜かたわら",
+    "meaning": "一邊…，一邊…",
+    "explanation": "用于表示一邊…，一邊…。",
+    "examples": [
+      {
+        "japanese": "仕事のかたわら、大学にも通っている。",
+        "translation": "一边工作一边上大学。"
+      }
+    ],
+    "level": "N1",
+    "category": "付帯状態・非付帯状態",
+    "tags": [
+      "付帯状態",
+      "非付帯状態"
+    ]
+  },
+  {
+    "id": "g022",
+    "pattern": "〜がてら",
+    "meaning": "順便，同時",
+    "explanation": "用于表示順便，同時。",
+    "examples": [
+      {
+        "japanese": "散歩がてらコンビニに寄った。",
+        "translation": "顺便散步时去了便利店。"
+      }
+    ],
+    "level": "N1",
+    "category": "付帯状態・非付帯状態",
+    "tags": [
+      "付帯状態",
+      "非付帯状態"
+    ]
+  },
+  {
+    "id": "g023",
+    "pattern": "〜かと思いきや",
+    "meaning": "本以為～，卻…",
+    "explanation": "用于表示本以為～，卻…。",
+    "examples": [
+      {
+        "japanese": "試合は簡単かと思いきや、最後まで接戦だった。",
+        "translation": "本以为比赛很简单，结果直到最后都是激战。"
+      }
+    ],
+    "level": "N1",
+    "category": "逆接・譲歩",
+    "tags": [
+      "逆接",
+      "譲歩"
+    ]
+  },
+  {
+    "id": "g024",
+    "pattern": "〜が早いか",
+    "meaning": "做一件事的同時",
+    "explanation": "用于表示做一件事的同時。",
+    "examples": [
+      {
+        "japanese": "ベルが鳴るが早いか、生徒たちは席を立った。",
+        "translation": "铃声一响，学生们就起身了。"
+      }
+    ],
+    "level": "N1",
+    "category": "時間の前後",
+    "tags": [
+      "時間の前後"
+    ]
+  },
+  {
+    "id": "g025",
+    "pattern": "〜からある / 〜からする / 〜からの",
+    "meaning": "超過…，…以上",
+    "explanation": "用于表示超過…，…以上。",
+    "examples": [
+      {
+        "japanese": "この箱は10キロからある。",
+        "translation": "这个箱子重达10公斤。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g026",
+    "pattern": "〜かれ〜かれ",
+    "meaning": "或…或…",
+    "explanation": "用于表示或…或…。",
+    "examples": [
+      {
+        "japanese": "泣くかれ笑うかれ、子供たちはゲームに夢中だった。",
+        "translation": "无论哭还是笑，孩子们都沉迷于游戏。"
+      }
+    ],
+    "level": "N1",
+    "category": "例示",
+    "tags": [
+      "例示"
+    ]
+  },
+  {
+    "id": "g027",
+    "pattern": "〜きっての",
+    "meaning": "在…中最好的",
+    "explanation": "用于表示在…中最好的。",
+    "examples": [
+      {
+        "japanese": "彼は会社きってのエースだ。",
+        "translation": "他是公司里最强的王牌。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g028",
+    "pattern": "〜きらいがある",
+    "meaning": "有～的傾向",
+    "explanation": "用于表示有～的傾向。",
+    "examples": [
+      {
+        "japanese": "彼は人の話を聞かないきらいがある。",
+        "translation": "他有不听别人意见的倾向。"
+      }
+    ],
+    "level": "N1",
+    "category": "傾向",
+    "tags": [
+      "傾向"
+    ]
+  },
+  {
+    "id": "g029",
+    "pattern": "〜極まる",
+    "meaning": "最～",
+    "explanation": "用于表示最～。",
+    "examples": [
+      {
+        "japanese": "その態度は危険極まる。",
+        "translation": "那种态度极其危险。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g030",
+    "pattern": "〜極まりない",
+    "meaning": "極其…，非常…",
+    "explanation": "用于表示極其…，非常…。",
+    "examples": [
+      {
+        "japanese": "無責任極まりない行動だ。",
+        "translation": "这是极其不负责任的行为。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g031",
+    "pattern": "〜ごとき / ごとく / ごとし",
+    "meaning": "好像；像～的樣子",
+    "explanation": "用于表示好像；像～的樣子。",
+    "examples": [
+      {
+        "japanese": "彼ごときに任せられない。",
+        "translation": "不能交给像他那样的人。"
+      }
+    ],
+    "level": "N1",
+    "category": "比況",
+    "tags": [
+      "比況"
+    ]
+  },
+  {
+    "id": "g032",
+    "pattern": "〜こととて",
+    "meaning": "由於",
+    "explanation": "用于表示由於。",
+    "examples": [
+      {
+        "japanese": "学生のこととて、まだ不慣れだ。",
+        "translation": "因为是学生，还不太熟练。"
+      }
+    ],
+    "level": "N1",
+    "category": "原因・理由",
+    "tags": [
+      "原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g033",
+    "pattern": "〜始末だ",
+    "meaning": "(不好的) 後果",
+    "explanation": "用于表示(不好的) 後果。",
+    "examples": [
+      {
+        "japanese": "借金の始末だ。",
+        "translation": "结果成了欠债累累。"
+      }
+    ],
+    "level": "N1",
+    "category": "経過・結末",
+    "tags": [
+      "経過",
+      "結末"
+    ]
+  },
+  {
+    "id": "g034",
+    "pattern": "〜ずくめ",
+    "meaning": "全是…，净是…",
+    "explanation": "用于表示全是…，净是…。",
+    "examples": [
+      {
+        "japanese": "雨ずくめの一日だった。",
+        "translation": "整天都是下雨。"
+      }
+    ],
+    "level": "N1",
+    "category": "樣子・狀態",
+    "tags": [
+      "樣子",
+      "狀態"
+    ]
+  },
+  {
+    "id": "g035",
+    "pattern": "〜ずにはおかない / 〜ないではおかない",
+    "meaning": "❶不做到～絕不放棄\n❷ 自然地發生～狀態",
+    "explanation": "用于表示❶不做到～絕不放棄\n❷ 自然地發生～狀態。",
+    "examples": [
+      {
+        "japanese": "この映画はあなたを感動させずにはおかない。",
+        "translation": "这部电影一定会让你感动。"
+      }
+    ],
+    "level": "N1",
+    "category": "強制",
+    "tags": [
+      "強制"
+    ]
+  },
+  {
+    "id": "g036",
+    "pattern": "〜ずにはすまない / 〜ないではすまない",
+    "meaning": "必須得做～",
+    "explanation": "用于表示必須得做～。",
+    "examples": [
+      {
+        "japanese": "彼の失敗は許されずにはすまない。",
+        "translation": "他的失败无法被原谅。"
+      }
+    ],
+    "level": "N1",
+    "category": "強制",
+    "tags": [
+      "強制"
+    ]
+  },
+  {
+    "id": "g037",
+    "pattern": "〜術がない",
+    "meaning": "沒有辦法做到；無法",
+    "explanation": "用于表示沒有辦法做到；無法。",
+    "examples": [
+      {
+        "japanese": "もう助ける術がない。",
+        "translation": "已经没有办法救助了。"
+      }
+    ],
+    "level": "N1",
+    "category": "可能・難易",
+    "tags": [
+      "可能",
+      "難易"
+    ]
+  },
+  {
+    "id": "g038",
+    "pattern": "〜すら",
+    "meaning": "連～也",
+    "explanation": "用于表示連～也。",
+    "examples": [
+      {
+        "japanese": "彼には休む暇すらない。",
+        "translation": "他连休息的时间都没有。"
+      }
+    ],
+    "level": "N1",
+    "category": "強調",
+    "tags": [
+      "強調"
+    ]
+  },
+  {
+    "id": "g039",
+    "pattern": "〜そばから",
+    "meaning": "剛…就…",
+    "explanation": "用于表示剛…就…。",
+    "examples": [
+      {
+        "japanese": "掃除したそばから汚れていく。",
+        "translation": "刚打扫完就又脏了。"
+      }
+    ],
+    "level": "N1",
+    "category": "時間の前後",
+    "tags": [
+      "時間の前後"
+    ]
+  },
+  {
+    "id": "g040",
+    "pattern": "ただ〜のみ",
+    "meaning": "只有…",
+    "explanation": "用于表示只有…。",
+    "examples": [
+      {
+        "japanese": "ただ待つのみだ。",
+        "translation": "只能等待。"
+      }
+    ],
+    "level": "N1",
+    "category": "限定",
+    "tags": [
+      "限定"
+    ]
+  },
+  {
+    "id": "g041",
+    "pattern": "〜たためしがない",
+    "meaning": "沒有…過",
+    "explanation": "用于表示沒有…過。",
+    "examples": [
+      {
+        "japanese": "彼は遅刻したためしがない。",
+        "translation": "他从来没有迟到过。"
+      }
+    ],
+    "level": "N1",
+    "category": "否定",
+    "tags": [
+      "否定"
+    ]
+  },
+  {
+    "id": "g042",
+    "pattern": "〜たところで",
+    "meaning": "即使…也",
+    "explanation": "用于表示即使…也。",
+    "examples": [
+      {
+        "japanese": "今さら謝ったところで遅い。",
+        "translation": "现在道歉也太晚了。"
+      }
+    ],
+    "level": "N1",
+    "category": "逆接条件",
+    "tags": [
+      "逆接条件"
+    ]
+  },
+  {
+    "id": "g043",
+    "pattern": "〜だに",
+    "meaning": "甚至是～都不能…",
+    "explanation": "用于表示甚至是～都不能…。",
+    "examples": [
+      {
+        "japanese": "考えだに恐ろしい。",
+        "translation": "光是想到就可怕。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g044",
+    "pattern": "〜だの〜だの",
+    "meaning": "……啦……啦",
+    "explanation": "用于表示……啦……啦。",
+    "examples": [
+      {
+        "japanese": "仕事だの遊びだので忙しい。",
+        "translation": "因为工作啊娱乐啊很忙。"
+      }
+    ],
+    "level": "N1",
+    "category": "其他",
+    "tags": [
+      "其他"
+    ]
+  },
+  {
+    "id": "g045",
+    "pattern": "〜た弾みに / 〜た拍子に",
+    "meaning": "在…時候、剛一…就…",
+    "explanation": "用于表示在…時候、剛一…就…。",
+    "examples": [
+      {
+        "japanese": "驚いた弾みにコップを落としてしまった。",
+        "translation": "一惊之下把杯子掉了。"
+      }
+    ],
+    "level": "N1",
+    "category": "時間の前後",
+    "tags": [
+      "時間の前後"
+    ]
+  },
+  {
+    "id": "g046",
+    "pattern": "〜た分だけ",
+    "meaning": "按其程度",
+    "explanation": "用于表示按其程度。",
+    "examples": [
+      {
+        "japanese": "努力した分だけ成果が出た。",
+        "translation": "付出多少努力，就有多少成果。"
+      }
+    ],
+    "level": "N1",
+    "category": "其他",
+    "tags": [
+      "其他"
+    ]
+  },
+  {
+    "id": "g047",
+    "pattern": "たまでだ / 〜たまでのことだ",
+    "meaning": "〜只是～",
+    "explanation": "用于表示〜只是～。",
+    "examples": [
+      {
+        "japanese": "手伝ったまでだ。",
+        "translation": "只是帮了一把而已。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g048",
+    "pattern": "〜たら最後 / 〜たが最後",
+    "meaning": "一旦～就完了",
+    "explanation": "用于表示一旦～就完了。",
+    "examples": [
+      {
+        "japanese": "一度始めたら最後、後戻りはできない。",
+        "translation": "一旦开始就无法回头。"
+      }
+    ],
+    "level": "N1",
+    "category": "条件",
+    "tags": [
+      "条件"
+    ]
+  },
+  {
+    "id": "g049",
+    "pattern": "〜たら〜たで",
+    "meaning": "就算……了，也……",
+    "explanation": "用于表示就算……了，也……。",
+    "examples": [
+      {
+        "japanese": "高ければ高いで困るし、安ければ安いで心配だ。",
+        "translation": "要是贵了就麻烦，要是便宜了也不安。"
+      }
+    ],
+    "level": "N1",
+    "category": "其他",
+    "tags": [
+      "其他"
+    ]
+  },
+  {
+    "id": "g050",
+    "pattern": "〜たりとも〜ない",
+    "meaning": "即使〜也不…",
+    "explanation": "用于表示即使〜也不…。",
+    "examples": [
+      {
+        "japanese": "一秒たりとも無駄にできない。",
+        "translation": "一秒也不能浪费。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g051",
+    "pattern": "〜たるもの",
+    "meaning": "作為……的……",
+    "explanation": "用于表示作為……的……。",
+    "examples": [
+      {
+        "japanese": "教師たるもの、責任を持つべきだ。",
+        "translation": "作为老师应该承担责任。"
+      }
+    ],
+    "level": "N1",
+    "category": "評価の視点",
+    "tags": [
+      "評価の視点"
+    ]
+  },
+  {
+    "id": "g052",
+    "pattern": "〜尽くす",
+    "meaning": "……光；……盡；……完",
+    "explanation": "用于表示……光；……盡；……完。",
+    "examples": [
+      {
+        "japanese": "彼は仕事に尽くした。",
+        "translation": "他为工作尽心尽力。"
+      }
+    ],
+    "level": "N1",
+    "category": "意図的行為・動作の開始和結束",
+    "tags": [
+      "意図的行為",
+      "動作の開始和結束"
+    ]
+  },
+  {
+    "id": "g053",
+    "pattern": "〜つ〜つ",
+    "meaning": "有時〜有時〜",
+    "explanation": "用于表示有時〜有時〜。",
+    "examples": [
+      {
+        "japanese": "笑うにつけ泣くにつけ、彼のことを思い出す。",
+        "translation": "不管是笑还是哭，都会想起他。"
+      }
+    ],
+    "level": "N1",
+    "category": "反復",
+    "tags": [
+      "反復"
+    ]
+  },
+  {
+    "id": "g054",
+    "pattern": "〜であれ〜であれ",
+    "meaning": "也是〜也是〜",
+    "explanation": "用于表示也是〜也是〜。",
+    "examples": [
+      {
+        "japanese": "雨であれ雪であれ、行かなければならない。",
+        "translation": "无论是雨还是雪，都必须去。"
+      }
+    ],
+    "level": "N1",
+    "category": "例示",
+    "tags": [
+      "例示"
+    ]
+  },
+  {
+    "id": "g055",
+    "pattern": "〜てからというもの",
+    "meaning": "自從〜就一直…",
+    "explanation": "用于表示自從〜就一直…。",
+    "examples": [
+      {
+        "japanese": "引っ越してからというもの、忙しくて仕方がない。",
+        "translation": "自从搬家之后就忙得不得了。"
+      }
+    ],
+    "level": "N1",
+    "category": "時間の前後",
+    "tags": [
+      "時間の前後"
+    ]
+  },
+  {
+    "id": "g056",
+    "pattern": "〜ではあるまいし / 〜でもあるまいし",
+    "meaning": "又不是〜，所以…",
+    "explanation": "用于表示又不是〜，所以…。",
+    "examples": [
+      {
+        "japanese": "子供ではあるまいし、自分で決めなさい。",
+        "translation": "又不是小孩子，自己决定吧。"
+      }
+    ],
+    "level": "N1",
+    "category": "原因・理由",
+    "tags": [
+      "原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g057",
+    "pattern": "〜てまえ",
+    "meaning": "為了面子而做〜",
+    "explanation": "用于表示為了面子而做〜。",
+    "examples": [
+      {
+        "japanese": "先輩の前だけに、強く言えない。",
+        "translation": "正因为在前辈面前，不能强硬地说。"
+      }
+    ],
+    "level": "N1",
+    "category": "原因・理由",
+    "tags": [
+      "原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g058",
+    "pattern": "〜てやまない",
+    "meaning": "…不已，非常…，衷心地…",
+    "explanation": "用于表示…不已，非常…，衷心地…。",
+    "examples": [
+      {
+        "japanese": "彼の成功を願ってやまない。",
+        "translation": "衷心地希望他的成功。"
+      }
+    ],
+    "level": "N1",
+    "category": "原因・理由",
+    "tags": [
+      "原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g059",
+    "pattern": "〜と相まって",
+    "meaning": "再加上",
+    "explanation": "用于表示再加上。",
+    "examples": [
+      {
+        "japanese": "音楽と相まって、会場は盛り上がった。",
+        "translation": "在音乐的相映之下，会场气氛高涨。"
+      }
+    ],
+    "level": "N1",
+    "category": "付加",
+    "tags": [
+      "付加"
+    ]
+  },
+  {
+    "id": "g060",
+    "pattern": "〜とあれば",
+    "meaning": "如果是……就一定；\n如果……也需要；\n既然是……就(不得不)……",
+    "explanation": "用于表示如果是……就一定；\n如果……也需要；\n既然是……就(不得不)……。",
+    "examples": [
+      {
+        "japanese": "行くとあれば、準備をしよう。",
+        "translation": "如果要去的话，就准备一下。"
+      }
+    ],
+    "level": "N1",
+    "category": "条件",
+    "tags": [
+      "条件"
+    ]
+  },
+  {
+    "id": "g061",
+    "pattern": "〜といい〜といい",
+    "meaning": "〜也～也",
+    "explanation": "用于表示〜也～也。",
+    "examples": [
+      {
+        "japanese": "朝といい夜といい、最近は眠れない日が続いている。",
+        "translation": "无论早上还是晚上，最近都睡不着。"
+      }
+    ],
+    "level": "N1",
+    "category": "例示",
+    "tags": [
+      "例示"
+    ]
+  },
+  {
+    "id": "g062",
+    "pattern": "〜といえども",
+    "meaning": "即使…也(不能)",
+    "explanation": "用于表示即使…也(不能)。",
+    "examples": [
+      {
+        "japanese": "学生といえども責任はある。",
+        "translation": "即使是学生也有责任。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g063",
+    "pattern": "〜というもの",
+    "meaning": "這麼長時間",
+    "explanation": "用于表示這麼長時間。",
+    "examples": [
+      {
+        "japanese": "このところというもの、よく眠れない。",
+        "translation": "从最近这段时间起，经常睡不好。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g064",
+    "pattern": "〜ときたら",
+    "meaning": "提到〜",
+    "explanation": "用于表示提到〜。",
+    "examples": [
+      {
+        "japanese": "彼ときたら遅刻ばかりだ。",
+        "translation": "说到他就总是迟到。"
+      }
+    ],
+    "level": "N1",
+    "category": "話題",
+    "tags": [
+      "話題"
+    ]
+  },
+  {
+    "id": "g065",
+    "pattern": "〜ところを",
+    "meaning": "雖說是〜這種情況，卻還做了～",
+    "explanation": "用于表示雖說是〜這種情況，卻還做了～。",
+    "examples": [
+      {
+        "japanese": "雨のところを来ていただきありがとうございます。",
+        "translation": "尽管下雨仍然来，非常感谢。"
+      }
+    ],
+    "level": "N1",
+    "category": "逆接・譲歩",
+    "tags": [
+      "逆接",
+      "譲歩"
+    ]
+  },
+  {
+    "id": "g066",
+    "pattern": "〜とはいえ",
+    "meaning": "雖說〜",
+    "explanation": "用于表示雖說〜。",
+    "examples": [
+      {
+        "japanese": "高いとはいえ、この価値はある。",
+        "translation": "虽说很贵，但还是值得。"
+      }
+    ],
+    "level": "N1",
+    "category": "逆接・譲歩",
+    "tags": [
+      "逆接",
+      "譲歩"
+    ]
+  },
+  {
+    "id": "g067",
+    "pattern": "〜ともあろう",
+    "meaning": "那種了不起的〜",
+    "explanation": "用于表示那種了不起的〜。",
+    "examples": [
+      {
+        "japanese": "君ともあろう者がそんなことを言うとは。",
+        "translation": "你这样的人竟然说出那种话。"
+      }
+    ],
+    "level": "N1",
+    "category": "評価の視点",
+    "tags": [
+      "評価の視点"
+    ]
+  },
+  {
+    "id": "g068",
+    "pattern": "〜ともなく / 〜ともなしに",
+    "meaning": "不經意",
+    "explanation": "用于表示不經意。",
+    "examples": [
+      {
+        "japanese": "テレビを見ともなく見ていた。",
+        "translation": "不经意地看着电视。"
+      }
+    ],
+    "level": "N1",
+    "category": "様子・状態",
+    "tags": [
+      "様子",
+      "状態"
+    ]
+  },
+  {
+    "id": "g069",
+    "pattern": "〜ともなると / 〜ともなれば",
+    "meaning": "一旦～的時候",
+    "explanation": "用于表示一旦～的時候。",
+    "examples": [
+      {
+        "japanese": "プロともなると、対応が違う。",
+        "translation": "一旦成为专业人士，反应就不同。"
+      }
+    ],
+    "level": "N1",
+    "category": "評価の視点",
+    "tags": [
+      "評価の視点"
+    ]
+  },
+  {
+    "id": "g070",
+    "pattern": "〜ながら❸",
+    "meaning": "保持～的狀態",
+    "explanation": "用于表示保持～的狀態。",
+    "examples": [
+      {
+        "japanese": "彼は歩きながら話した。",
+        "translation": "他边走边说。"
+      }
+    ],
+    "level": "N1",
+    "category": "様子・状態",
+    "tags": [
+      "様子",
+      "状態"
+    ]
+  },
+  {
+    "id": "g071",
+    "pattern": "〜なくしては",
+    "meaning": "如果沒有～",
+    "explanation": "用于表示如果沒有～。",
+    "examples": [
+      {
+        "japanese": "努力なくしては成功はない。",
+        "translation": "没有努力就不会成功。"
+      }
+    ],
+    "level": "N1",
+    "category": "条件",
+    "tags": [
+      "条件"
+    ]
+  },
+  {
+    "id": "g072",
+    "pattern": "〜なくもない",
+    "meaning": "有點～；也不是全都不～",
+    "explanation": "用于表示有點～；也不是全都不～。",
+    "examples": [
+      {
+        "japanese": "行けなくもないが、難しい。",
+        "translation": "并不是不能去，但很难。"
+      }
+    ],
+    "level": "N1",
+    "category": "部分否定",
+    "tags": [
+      "部分否定"
+    ]
+  },
+  {
+    "id": "g073",
+    "pattern": "〜なしに / 〜なしで",
+    "meaning": "沒有～",
+    "explanation": "用于表示沒有～。",
+    "examples": [
+      {
+        "japanese": "許可なしに立ち入ってはいけない。",
+        "translation": "未经许可不得进入。"
+      }
+    ],
+    "level": "N1",
+    "category": "否定",
+    "tags": [
+      "否定"
+    ]
+  },
+  {
+    "id": "g074",
+    "pattern": "〜ならではの",
+    "meaning": "特有的",
+    "explanation": "用于表示特有的。",
+    "examples": [
+      {
+        "japanese": "日本ならではの風景だ。",
+        "translation": "是日本特有的风景。"
+      }
+    ],
+    "level": "N1",
+    "category": "限定",
+    "tags": [
+      "限定"
+    ]
+  },
+  {
+    "id": "g075",
+    "pattern": "〜ないまでも",
+    "meaning": "就算不能～",
+    "explanation": "用于表示就算不能～。",
+    "examples": [
+      {
+        "japanese": "完璧でないまでも、十分良い。",
+        "translation": "即使不完美，也足够好了。"
+      }
+    ],
+    "level": "N1",
+    "category": "程度",
+    "tags": [
+      "程度"
+    ]
+  },
+  {
+    "id": "g076",
+    "pattern": "〜なり",
+    "meaning": "剛～就立刻～",
+    "explanation": "用于表示剛～就立刻～。",
+    "examples": [
+      {
+        "japanese": "駅に着くなり、電話が鳴り出した。",
+        "translation": "一到车站，电话就响了。"
+      }
+    ],
+    "level": "N1",
+    "category": "時間の前後",
+    "tags": [
+      "時間の前後"
+    ]
+  },
+  {
+    "id": "g077",
+    "pattern": "〜なりとも",
+    "meaning": "…之類的、…什麼的；\n無論…、不管…",
+    "explanation": "用于表示…之類的、…什麼的；\n無論…、不管…。",
+    "examples": [
+      {
+        "japanese": "一度なりとも会ってみたい。",
+        "translation": "至少想见一面。"
+      }
+    ],
+    "level": "N1",
+    "category": "例示",
+    "tags": [
+      "例示"
+    ]
+  },
+  {
+    "id": "g078",
+    "pattern": "〜なり〜なり",
+    "meaning": "也可以是〜也可以是〜",
+    "explanation": "用于表示也可以是〜也可以是〜。",
+    "examples": [
+      {
+        "japanese": "コーヒーなりお茶なり、何か飲みませんか。",
+        "translation": "要不要来杯咖啡或者茶之类的？"
+      }
+    ],
+    "level": "N1",
+    "category": "例示",
+    "tags": [
+      "例示"
+    ]
+  },
+  {
+    "id": "g079",
+    "pattern": "〜なりに",
+    "meaning": "從某人所處立場出發 (做…)",
+    "explanation": "用于表示從某人所處立場出發 (做…)。",
+    "examples": [
+      {
+        "japanese": "自分なりに考えた。",
+        "translation": "我按照自己的方式思考了。"
+      }
+    ],
+    "level": "N1",
+    "category": "判断の立場",
+    "tags": [
+      "判断の立場"
+    ]
+  },
+  {
+    "id": "g080",
+    "pattern": "〜にあって",
+    "meaning": "…的狀況下",
+    "explanation": "用于表示…的狀況下。",
+    "examples": [
+      {
+        "japanese": "この状況にあって、冷静さが必要だ。",
+        "translation": "处于这种状况下，需要冷静。"
+      }
+    ],
+    "level": "N1",
+    "category": "時点・場面",
+    "tags": [
+      "時点",
+      "場面"
+    ]
+  },
+  {
+    "id": "g081",
+    "pattern": "〜に至る",
+    "meaning": "達到～，到達～，發展到～階段",
+    "explanation": "用于表示達到～，到達～，發展到～階段。",
+    "examples": [
+      {
+        "japanese": "話し合いは結論に至った。",
+        "translation": "讨论达成了结论。"
+      }
+    ],
+    "level": "N1",
+    "category": "経過・結末",
+    "tags": [
+      "経過",
+      "結末"
+    ]
+  },
+  {
+    "id": "g082",
+    "pattern": "〜に至るまで",
+    "meaning": "甚至到～",
+    "explanation": "用于表示甚至到～。",
+    "examples": [
+      {
+        "japanese": "子供に至るまで知っている。",
+        "translation": "连小孩子都知道。"
+      }
+    ],
+    "level": "N1",
+    "category": "限界",
+    "tags": [
+      "限界"
+    ]
+  },
+  {
+    "id": "g083",
+    "pattern": "〜に言わせれば",
+    "meaning": "依…看，讓…說",
+    "explanation": "用于表示依…看，讓…說。",
+    "examples": [
+      {
+        "japanese": "私に言わせれば、それは間違いだ。",
+        "translation": "依我看，那是错误的。"
+      }
+    ],
+    "level": "N1",
+    "category": "其他",
+    "tags": [
+      "其他"
+    ]
+  },
+  {
+    "id": "g084",
+    "pattern": "〜にかかっては / 〜にかかったら / 〜にかかると / 〜にかかれば",
+    "meaning": "如果交給…的話",
+    "explanation": "用于表示如果交給…的話。",
+    "examples": [
+      {
+        "japanese": "彼にかかっては安心だ。",
+        "translation": "交给他就放心了。"
+      }
+    ],
+    "level": "N1",
+    "category": "条件",
+    "tags": [
+      "条件"
+    ]
+  },
+  {
+    "id": "g085",
+    "pattern": "〜に関わる",
+    "meaning": "關係到～，涉及～",
+    "explanation": "用于表示關係到～，涉及～。",
+    "examples": [
+      {
+        "japanese": "安全に関わる問題だ。",
+        "translation": "这是关系安全的问题。"
+      }
+    ],
+    "level": "N1",
+    "category": "対象",
+    "tags": [
+      "対象"
+    ]
+  },
+  {
+    "id": "g086",
+    "pattern": "〜に限ったことではない",
+    "meaning": "不僅是～；不僅僅～",
+    "explanation": "用于表示不僅是～；不僅僅～。",
+    "examples": [
+      {
+        "japanese": "この問題は学生に限ったことではない。",
+        "translation": "这个问题并不仅限于学生。"
+      }
+    ],
+    "level": "N1",
+    "category": "非限定",
+    "tags": [
+      "非限定"
+    ]
+  },
+  {
+    "id": "g087",
+    "pattern": "〜にかこつけて",
+    "meaning": "以…為藉口",
+    "explanation": "用于表示以…為藉口。",
+    "examples": [
+      {
+        "japanese": "雨にかこつけて休んだ。",
+        "translation": "借口下雨请假了。"
+      }
+    ],
+    "level": "N1",
+    "category": "原因・理由",
+    "tags": [
+      "原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g088",
+    "pattern": "〜にかたくない",
+    "meaning": "不難〜",
+    "explanation": "用于表示不難〜。",
+    "examples": [
+      {
+        "japanese": "想像にかたくない。",
+        "translation": "不难想象。"
+      }
+    ],
+    "level": "N1",
+    "category": "原因・理由",
+    "tags": [
+      "原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g089",
+    "pattern": "〜にかまけて",
+    "meaning": "忙於〜",
+    "explanation": "用于表示忙於〜。",
+    "examples": [
+      {
+        "japanese": "遊びにかまけて勉強を忘れた。",
+        "translation": "沉迷玩耍忘了学习。"
+      }
+    ],
+    "level": "N1",
+    "category": "対象",
+    "tags": [
+      "対象"
+    ]
+  },
+  {
+    "id": "g090",
+    "pattern": "〜にして",
+    "meaning": "僅僅～",
+    "explanation": "用于表示僅僅～。",
+    "examples": [
+      {
+        "japanese": "医者にしてその間違いだ。",
+        "translation": "作为医生都犯了那个错误。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g091",
+    "pattern": "〜に忍びない",
+    "meaning": "不忍心…，不堪…",
+    "explanation": "用于表示不忍心…，不堪…。",
+    "examples": [
+      {
+        "japanese": "別れを告げるに忍びない。",
+        "translation": "不忍心说再见。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g092",
+    "pattern": "〜に即して / 〜に則して",
+    "meaning": "按照～",
+    "explanation": "用于表示按照～。",
+    "examples": [
+      {
+        "japanese": "法律に即して判断する。",
+        "translation": "按照法律来判断。"
+      }
+    ],
+    "level": "N1",
+    "category": "基準",
+    "tags": [
+      "基準"
+    ]
+  },
+  {
+    "id": "g093",
+    "pattern": "〜に堪える / 〜に堪えない",
+    "meaning": "(不) 值得～",
+    "explanation": "用于表示(不) 值得～。",
+    "examples": [
+      {
+        "japanese": "読むに堪える小説だ。",
+        "translation": "是值得读的小说。"
+      }
+    ],
+    "level": "N1",
+    "category": "可能・難易",
+    "tags": [
+      "可能",
+      "難易"
+    ]
+  },
+  {
+    "id": "g094",
+    "pattern": "〜に足る",
+    "meaning": "值得～",
+    "explanation": "用于表示值得～。",
+    "examples": [
+      {
+        "japanese": "信頼に足る人物だ。",
+        "translation": "是值得信赖的人。"
+      }
+    ],
+    "level": "N1",
+    "category": "可能・難易",
+    "tags": [
+      "可能",
+      "難易"
+    ]
+  },
+  {
+    "id": "g095",
+    "pattern": "〜にとどまらず",
+    "meaning": "不只～",
+    "explanation": "用于表示不只～。",
+    "examples": [
+      {
+        "japanese": "国内にとどまらず海外でも知られている。",
+        "translation": "不仅在国内，在海外也很有名。"
+      }
+    ],
+    "level": "N1",
+    "category": "非限定",
+    "tags": [
+      "非限定"
+    ]
+  },
+  {
+    "id": "g096",
+    "pattern": "〜に則って",
+    "meaning": "依據…，按照…，效法…，遵守…",
+    "explanation": "用于表示依據…，按照…，效法…，遵守…。",
+    "examples": [
+      {
+        "japanese": "法律に則って処理しなければならない。",
+        "translation": "必须按照法律处理。"
+      }
+    ],
+    "level": "N1",
+    "category": "基準",
+    "tags": [
+      "基準"
+    ]
+  },
+  {
+    "id": "g097",
+    "pattern": "〜にはあたらない",
+    "meaning": "不值得～；不需要～",
+    "explanation": "用于表示不值得～；不需要～。",
+    "examples": [
+      {
+        "japanese": "心配するにはあたらない。",
+        "translation": "不必担心。"
+      }
+    ],
+    "level": "N1",
+    "category": "程度",
+    "tags": [
+      "程度"
+    ]
+  },
+  {
+    "id": "g098",
+    "pattern": "〜には及ばない",
+    "meaning": "比不上〜；没必要～",
+    "explanation": "用于表示比不上〜；没必要～。",
+    "examples": [
+      {
+        "japanese": "急ぐには及ばない。",
+        "translation": "不用着急。"
+      }
+    ],
+    "level": "N1",
+    "category": "不必要",
+    "tags": [
+      "不必要"
+    ]
+  },
+  {
+    "id": "g099",
+    "pattern": "〜には無理がある",
+    "meaning": "……方面有不合理的地方，……有行不通的地方",
+    "explanation": "用于表示……方面有不合理的地方，……有行不通的地方。",
+    "examples": [
+      {
+        "japanese": "そんな計画には無理がある。",
+        "translation": "那样的计划是不可能的。"
+      }
+    ],
+    "level": "N1",
+    "category": "部分否定",
+    "tags": [
+      "部分否定"
+    ]
+  },
+  {
+    "id": "g100",
+    "pattern": "〜にひきかえ",
+    "meaning": "與～相反",
+    "explanation": "用于表示與～相反。",
+    "examples": [
+      {
+        "japanese": "去年にひきかえ、今年は暖かい。",
+        "translation": "相比去年，今年较暖和。"
+      }
+    ],
+    "level": "N1",
+    "category": "対比",
+    "tags": [
+      "対比"
+    ]
+  },
+  {
+    "id": "g101",
+    "pattern": "〜にもほどがある",
+    "meaning": "……也應該有個分寸",
+    "explanation": "用于表示……也應該有個分寸。",
+    "examples": [
+      {
+        "japanese": "無責任にもほどがある。",
+        "translation": "也太不负责任了。"
+      }
+    ],
+    "level": "N1",
+    "category": "部分否定",
+    "tags": [
+      "部分否定"
+    ]
+  },
+  {
+    "id": "g102",
+    "pattern": "〜にもまして",
+    "meaning": "比…更加",
+    "explanation": "用于表示比…更加。",
+    "examples": [
+      {
+        "japanese": "今年は例年にもまして暑い。",
+        "translation": "今年比往年更热。"
+      }
+    ],
+    "level": "N1",
+    "category": "時点・場面",
+    "tags": [
+      "時点",
+      "場面"
+    ]
+  },
+  {
+    "id": "g103",
+    "pattern": "〜に〜を重ねて",
+    "meaning": "反復…、屢次…、經歷…",
+    "explanation": "用于表示反復…、屢次…、經歷…。",
+    "examples": [
+      {
+        "japanese": "失敗に失敗を重ねて、彼はついに成功した。",
+        "translation": "经过一再失败，他终于成功了。"
+      }
+    ],
+    "level": "N1",
+    "category": "反復",
+    "tags": [
+      "反復"
+    ]
+  },
+  {
+    "id": "g104",
+    "pattern": "〜ねばならない",
+    "meaning": "必須",
+    "explanation": "用于表示必須。",
+    "examples": [
+      {
+        "japanese": "努力せねばならない。",
+        "translation": "必须努力。"
+      }
+    ],
+    "level": "N1",
+    "category": "義務",
+    "tags": [
+      "義務"
+    ]
+  },
+  {
+    "id": "g105",
+    "pattern": "〜の至り",
+    "meaning": "～之至",
+    "explanation": "用于表示～之至。",
+    "examples": [
+      {
+        "japanese": "光栄の至りです。",
+        "translation": "非常荣幸。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g106",
+    "pattern": "〜の極み",
+    "meaning": "～之極",
+    "explanation": "用于表示～之極。",
+    "examples": [
+      {
+        "japanese": "嬉しさの極みだ。",
+        "translation": "高兴到了极点。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g107",
+    "pattern": "〜のやら",
+    "meaning": "是～呢？",
+    "explanation": "用于表示是～呢？。",
+    "examples": [
+      {
+        "japanese": "彼が来るのやら来ないのやら分からない。",
+        "translation": "不知道他究竟来不来。"
+      }
+    ],
+    "level": "N1",
+    "category": "軽重の強調",
+    "tags": [
+      "軽重の強調"
+    ]
+  },
+  {
+    "id": "g108",
+    "pattern": "〜はおろか",
+    "meaning": "別說～了，就連…",
+    "explanation": "用于表示別說～了，就連…。",
+    "examples": [
+      {
+        "japanese": "漢字はおろか、ひらがなも読めない。",
+        "translation": "别说汉字，就连平假名也不会读。"
+      }
+    ],
+    "level": "N1",
+    "category": "付加",
+    "tags": [
+      "付加"
+    ]
+  },
+  {
+    "id": "g109",
+    "pattern": "〜ばそれまでだ / 〜たらそれまでだ",
+    "meaning": "一旦〜就完了",
+    "explanation": "用于表示一旦〜就完了。",
+    "examples": [
+      {
+        "japanese": "やってみてだめならそれまでだ。",
+        "translation": "试做了不行也就这样了。"
+      }
+    ],
+    "level": "N1",
+    "category": "主張・断定",
+    "tags": [
+      "主張",
+      "断定"
+    ]
+  },
+  {
+    "id": "g110",
+    "pattern": "〜びる / 〜びて / 〜びた",
+    "meaning": "像……，帶有……的樣子",
+    "explanation": "用于表示像……，帶有……的樣子。",
+    "examples": [
+      {
+        "japanese": "彼は偉ぶっている。",
+        "translation": "他装出一副了不起的样子。"
+      }
+    ],
+    "level": "N1",
+    "category": "比況",
+    "tags": [
+      "比況"
+    ]
+  },
+  {
+    "id": "g111",
+    "pattern": "〜べからず",
+    "meaning": "不許～",
+    "explanation": "用于表示不許～。",
+    "examples": [
+      {
+        "japanese": "立ち入りべからず。",
+        "translation": "禁止入内。"
+      }
+    ],
+    "level": "N1",
+    "category": "禁止",
+    "tags": [
+      "禁止"
+    ]
+  },
+  {
+    "id": "g112",
+    "pattern": "〜べく",
+    "meaning": "想要～",
+    "explanation": "用于表示想要～。",
+    "examples": [
+      {
+        "japanese": "成功すべく努力した。",
+        "translation": "为了成功努力了。"
+      }
+    ],
+    "level": "N1",
+    "category": "目的",
+    "tags": [
+      "目的"
+    ]
+  },
+  {
+    "id": "g113",
+    "pattern": "〜ほどのことではない",
+    "meaning": "沒有達到…地歩；不至於…",
+    "explanation": "用于表示沒有達到…地歩；不至於…。",
+    "examples": [
+      {
+        "japanese": "謝るほどのことではない。",
+        "translation": "不必道歉。"
+      }
+    ],
+    "level": "N1",
+    "category": "程度",
+    "tags": [
+      "程度"
+    ]
+  },
+  {
+    "id": "g114",
+    "pattern": "〜まじき",
+    "meaning": "不可以～，不應該～",
+    "explanation": "用于表示不可以～，不應該～。",
+    "examples": [
+      {
+        "japanese": "教師としてまじき行為だ。",
+        "translation": "作为教师不应有的行为。"
+      }
+    ],
+    "level": "N1",
+    "category": "禁止",
+    "tags": [
+      "禁止"
+    ]
+  },
+  {
+    "id": "g115",
+    "pattern": "〜までだ / 〜までのことだ",
+    "meaning": "只好～",
+    "explanation": "用于表示只好～。",
+    "examples": [
+      {
+        "japanese": "失敗したら謝るまでだ。",
+        "translation": "失败了就道歉而已。"
+      }
+    ],
+    "level": "N1",
+    "category": "主張・断定",
+    "tags": [
+      "主張",
+      "断定"
+    ]
+  },
+  {
+    "id": "g116",
+    "pattern": "〜までもない / 〜までもなく",
+    "meaning": "還沒有到～的程度；不必～",
+    "explanation": "用于表示還沒有到～的程度；不必～。",
+    "examples": [
+      {
+        "japanese": "説明するまでもない。",
+        "translation": "不必说明。"
+      }
+    ],
+    "level": "N1",
+    "category": "不必要",
+    "tags": [
+      "不必要"
+    ]
+  },
+  {
+    "id": "g117",
+    "pattern": "〜まみれ",
+    "meaning": "到處都是〜",
+    "explanation": "用于表示到處都是〜。",
+    "examples": [
+      {
+        "japanese": "泥まみれになって働いた。",
+        "translation": "满身泥土地工作。"
+      }
+    ],
+    "level": "N1",
+    "category": "様子・状態",
+    "tags": [
+      "様子",
+      "状態"
+    ]
+  },
+  {
+    "id": "g118",
+    "pattern": "〜めく",
+    "meaning": "有～的感覺",
+    "explanation": "用于表示有～的感覺。",
+    "examples": [
+      {
+        "japanese": "春めいた陽気だ。",
+        "translation": "这是有春天气息的天气。"
+      }
+    ],
+    "level": "N1",
+    "category": "傾向",
+    "tags": [
+      "傾向"
+    ]
+  },
+  {
+    "id": "g119",
+    "pattern": "〜もさることながら",
+    "meaning": "不能忽視～",
+    "explanation": "用于表示不能忽視～。",
+    "examples": [
+      {
+        "japanese": "彼は歩きながら話した。",
+        "translation": "他边走边说。"
+      }
+    ],
+    "level": "N1",
+    "category": "付加",
+    "tags": [
+      "付加"
+    ]
+  },
+  {
+    "id": "g120",
+    "pattern": "〜もそこそこに",
+    "meaning": "匆忙處理",
+    "explanation": "用于表示匆忙處理。",
+    "examples": [
+      {
+        "japanese": "食事もそこそこに出かけた。",
+        "translation": "吃饭也匆匆忙忙就出门了。"
+      }
+    ],
+    "level": "N1",
+    "category": "其他",
+    "tags": [
+      "其他"
+    ]
+  },
+  {
+    "id": "g121",
+    "pattern": "〜も同然だ",
+    "meaning": "幾乎等同於……",
+    "explanation": "用于表示幾乎等同於……。",
+    "examples": [
+      {
+        "japanese": "彼の不在は存在しないも同然だ。",
+        "translation": "他的缺席就像不存在一样。"
+      }
+    ],
+    "level": "N1",
+    "category": "傾向",
+    "tags": [
+      "傾向"
+    ]
+  },
+  {
+    "id": "g122",
+    "pattern": "〜ものを",
+    "meaning": "要是～ (就好了)，可是…",
+    "explanation": "用于表示要是～ (就好了)，可是…。",
+    "examples": [
+      {
+        "japanese": "言ってくれればよかったものを。",
+        "translation": "要是你说了就好了。"
+      }
+    ],
+    "level": "N1",
+    "category": "逆接・譲歩",
+    "tags": [
+      "逆接",
+      "譲歩"
+    ]
+  },
+  {
+    "id": "g123",
+    "pattern": "〜や否や",
+    "meaning": "一～就～",
+    "explanation": "用于表示一～就～。",
+    "examples": [
+      {
+        "japanese": "ベルが鳴るや否や子供たちは飛び出した。",
+        "translation": "铃声一响孩子们就冲了出去。"
+      }
+    ],
+    "level": "N1",
+    "category": "時間の前後",
+    "tags": [
+      "時間の前後"
+    ]
+  },
+  {
+    "id": "g124",
+    "pattern": "〜ゆえに",
+    "meaning": "因為，由於",
+    "explanation": "用于表示因為，由於。",
+    "examples": [
+      {
+        "japanese": "雨ゆえに試合は中止になった。",
+        "translation": "因为下雨，比赛取消了。"
+      }
+    ],
+    "level": "N1",
+    "category": "原因・理由",
+    "tags": [
+      "原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g125",
+    "pattern": "〜よう / 〜ようによっては",
+    "meaning": "要看…，取決於…的方法",
+    "explanation": "用于表示要看…，取決於…的方法。",
+    "examples": [
+      {
+        "japanese": "使い方ようによっては、便利にも不便にもなる。",
+        "translation": "要看使用方法，可能既方便也不方便。"
+      }
+    ],
+    "level": "N1",
+    "category": "基準",
+    "tags": [
+      "基準"
+    ]
+  },
+  {
+    "id": "g126",
+    "pattern": "〜ようが / 〜ようと",
+    "meaning": "不管～也，就算～也",
+    "explanation": "用于表示不管～也，就算～也。",
+    "examples": [
+      {
+        "japanese": "雨が降ろうと風が吹こうと出かける。",
+        "translation": "无论下雨还是刮风都出门。"
+      }
+    ],
+    "level": "N1",
+    "category": "基準",
+    "tags": [
+      "基準"
+    ]
+  },
+  {
+    "id": "g127",
+    "pattern": "〜ようにも〜ない",
+    "meaning": "雖然想～但是不能…",
+    "explanation": "用于表示雖然想～但是不能…。",
+    "examples": [
+      {
+        "japanese": "手を伸ばそうにも届かない。",
+        "translation": "虽然想伸手，也够不着。"
+      }
+    ],
+    "level": "N1",
+    "category": "可能・難易",
+    "tags": [
+      "可能",
+      "難易"
+    ]
+  },
+  {
+    "id": "g128",
+    "pattern": "〜より",
+    "meaning": "從〜",
+    "explanation": "用于表示從〜。",
+    "examples": [
+      {
+        "japanese": "昨日より今日は寒い。",
+        "translation": "今天比昨天更冷。"
+      }
+    ],
+    "level": "N1",
+    "category": "起點・終点",
+    "tags": [
+      "起點",
+      "終点"
+    ]
+  },
+  {
+    "id": "g129",
+    "pattern": "〜わ〜わで",
+    "meaning": "又是～又是～",
+    "explanation": "用于表示又是～又是～。",
+    "examples": [
+      {
+        "japanese": "仕事は忙しいわ給料は安いわで、転職を考え始めた。",
+        "translation": "工作又忙又工资又低，开始考虑换工作。"
+      }
+    ],
+    "level": "N1",
+    "category": "並列／原因・理由",
+    "tags": [
+      "並列／原因",
+      "理由"
+    ]
+  },
+  {
+    "id": "g130",
+    "pattern": "〜をおいて",
+    "meaning": "除了～之外",
+    "explanation": "用于表示除了～之外。",
+    "examples": [
+      {
+        "japanese": "彼をおいてこの役は務まらない。",
+        "translation": "除了他没有人能胜任这个角色。"
+      }
+    ],
+    "level": "N1",
+    "category": "限定",
+    "tags": [
+      "限定"
+    ]
+  },
+  {
+    "id": "g131",
+    "pattern": "〜を押して / 〜を押し切って",
+    "meaning": "不顧……的反對，冒著……",
+    "explanation": "用于表示不顧……的反對，冒著……。",
+    "examples": [
+      {
+        "japanese": "反対を押して出席した。",
+        "translation": "顶着反对出席了。"
+      }
+    ],
+    "level": "N1",
+    "category": "無関係・除外",
+    "tags": [
+      "無関係",
+      "除外"
+    ]
+  },
+  {
+    "id": "g132",
+    "pattern": "〜を顧みず / 〜も顧みず",
+    "meaning": "不管…，不顧…",
+    "explanation": "用于表示不管…，不顧…。",
+    "examples": [
+      {
+        "japanese": "危険を顧みず進んだ。",
+        "translation": "不顾危险前进。"
+      }
+    ],
+    "level": "N1",
+    "category": "無関係・除外",
+    "tags": [
+      "無関係",
+      "除外"
+    ]
+  },
+  {
+    "id": "g133",
+    "pattern": "〜を限りに",
+    "meaning": "以～為限",
+    "explanation": "用于表示以～為限。",
+    "examples": [
+      {
+        "japanese": "今日を限りに禁煙する。",
+        "translation": "从今天起戒烟。"
+      }
+    ],
+    "level": "N1",
+    "category": "限度",
+    "tags": [
+      "限度"
+    ]
+  },
+  {
+    "id": "g134",
+    "pattern": "〜を兼ねて",
+    "meaning": "兼有…的目的；順帶著…",
+    "explanation": "用于表示兼有…的目的；順帶著…。",
+    "examples": [
+      {
+        "japanese": "挨拶を兼ねて手土産を持って行った。",
+        "translation": "顺便打招呼，带着礼物去了。"
+      }
+    ],
+    "level": "N1",
+    "category": "並列",
+    "tags": [
+      "並列"
+    ]
+  },
+  {
+    "id": "g135",
+    "pattern": "〜を皮切りに / 〜を皮切りとして",
+    "meaning": "以～為開端",
+    "explanation": "用于表示以～為開端。",
+    "examples": [
+      {
+        "japanese": "春の花見を皮切りにイベントが続く。",
+        "translation": "以春季赏花为开端，活动持续不断。"
+      }
+    ],
+    "level": "N1",
+    "category": "起点・終点",
+    "tags": [
+      "起点",
+      "終点"
+    ]
+  },
+  {
+    "id": "g136",
+    "pattern": "〜を禁じ得ない",
+    "meaning": "禁不住～",
+    "explanation": "用于表示禁不住～。",
+    "examples": [
+      {
+        "japanese": "その光景を見て、涙を禁じ得なかった。",
+        "translation": "看到那一幕忍不住流泪。"
+      }
+    ],
+    "level": "N1",
+    "category": "強制",
+    "tags": [
+      "強制"
+    ]
+  },
+  {
+    "id": "g137",
+    "pattern": "〜を境に",
+    "meaning": "以……為界限，自……以後",
+    "explanation": "用于表示以……為界限，自……以後。",
+    "examples": [
+      {
+        "japanese": "その日を境に態度が一変した。",
+        "translation": "从那一天起态度发生了变化。"
+      }
+    ],
+    "level": "N1",
+    "category": "限界",
+    "tags": [
+      "限界"
+    ]
+  },
+  {
+    "id": "g138",
+    "pattern": "〜をもって❶ (期限)",
+    "meaning": "以～為期限",
+    "explanation": "用于表示以～為期限。",
+    "examples": [
+      {
+        "japanese": "今日をもってこの店は閉店します。",
+        "translation": "从今天起这家店关闭。"
+      }
+    ],
+    "level": "N1",
+    "category": "限界",
+    "tags": [
+      "限界"
+    ]
+  },
+  {
+    "id": "g139",
+    "pattern": "〜をもって❷ (手段・基準)",
+    "meaning": "以～、用～",
+    "explanation": "用于表示以～、用～。",
+    "examples": [
+      {
+        "japanese": "今日をもってこの店は閉店します。",
+        "translation": "从今天起这家店关闭。"
+      }
+    ],
+    "level": "N1",
+    "category": "手段・媒介",
+    "tags": [
+      "手段",
+      "媒介"
+    ]
+  },
+  {
+    "id": "g140",
+    "pattern": "〜をものともせず",
+    "meaning": "不畏～；不顧～",
+    "explanation": "用于表示不畏～；不顧～。",
+    "examples": [
+      {
+        "japanese": "困難をものともせずに進んだ。",
+        "translation": "不畏困难地前进。"
+      }
+    ],
+    "level": "N1",
+    "category": "無関係・除外",
+    "tags": [
+      "無関係",
+      "除外"
+    ]
+  },
+  {
+    "id": "g141",
+    "pattern": "〜を踏まえて",
+    "meaning": "依據…，根據…，立足於…，考慮到…",
+    "explanation": "用于表示依據…，根據…，立足於…，考慮到…。",
+    "examples": [
+      {
+        "japanese": "経験を踏まえて計画を立てた。",
+        "translation": "根据经验制定计划。"
+      }
+    ],
+    "level": "N1",
+    "category": "基準",
+    "tags": [
+      "基準"
+    ]
+  },
+  {
+    "id": "g142",
+    "pattern": "〜を経て",
+    "meaning": "經過…，通過…",
+    "explanation": "用于表示經過…，通過…。",
+    "examples": [
+      {
+        "japanese": "一年を経て成長した。",
+        "translation": "经过一年成长了。"
+      }
+    ],
+    "level": "N1",
+    "category": "条件",
+    "tags": [
+      "条件"
+    ]
+  },
+  {
+    "id": "g143",
+    "pattern": "〜を余儀なくされる",
+    "meaning": "被迫～，不得已必須～",
+    "explanation": "用于表示被迫～，不得已必須～。",
+    "examples": [
+      {
+        "japanese": "事故で休業を余儀なくされた。",
+        "translation": "因事故被迫休业。"
+      }
+    ],
+    "level": "N1",
+    "category": "強制",
+    "tags": [
+      "強制"
+    ]
+  },
+  {
+    "id": "g144",
+    "pattern": "〜をよそに",
+    "meaning": "不理會～",
+    "explanation": "用于表示不理會～。",
+    "examples": [
+      {
+        "japanese": "雨をよそに試合は続けられた。",
+        "translation": "不顾下雨比赛继续举行。"
+      }
+    ],
+    "level": "N1",
+    "category": "無関係・除外",
+    "tags": [
+      "無関係",
+      "除外"
+    ]
+  },
+  {
+    "id": "g145",
+    "pattern": "〜んがために",
+    "meaning": "為了～的目的",
+    "explanation": "用于表示為了～的目的。",
+    "examples": [
+      {
+        "japanese": "成功んがために努力した。",
+        "translation": "为了成功而努力。"
+      }
+    ],
+    "level": "N1",
+    "category": "目的",
+    "tags": [
+      "目的"
+    ]
+  },
+  {
+    "id": "g146",
+    "pattern": "〜んばかりに",
+    "meaning": "眼看就要～了",
+    "explanation": "用于表示眼看就要～了。",
+    "examples": [
+      {
+        "japanese": "驚いたんばかりに目を見開いた。",
+        "translation": "惊讶得瞪大了眼睛。"
+      }
+    ],
+    "level": "N1",
+    "category": "様子・状態",
+    "tags": [
+      "様子",
+      "状態"
+    ]
+  }
+]
