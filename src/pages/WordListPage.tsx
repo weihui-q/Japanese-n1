@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
-import { useAppStore } from '../store/appStore';
-import type { Word } from '../types';
+import { useAppStore } from '../store/appStore';import { speakJapanese } from '../utils/speech';import type { Word } from '../types';
 
 // 五十音図インデックス
 const HIRAGANA_INDEX = [
@@ -211,6 +210,18 @@ function WordCard({ word }: { word: Word }) {
         <div className="flex items-baseline gap-2 mb-1">
           <h3 className="text-xl font-bold">{word.kanji}</h3>
           <span className="text-sm opacity-80">{word.kana}</span>
+          <button
+            type="button"
+            aria-label="发音を再生"
+            onClick={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              speakJapanese(word.kana);
+            }}
+            className="text-sm text-white/70 hover:text-white transition"
+          >
+            🔊
+          </button>
         </div>
         <p className="text-sm leading-6">
           {word.meanings.map((meaningItem, index) => (

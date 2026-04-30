@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useAppStore } from '../store/appStore';
 import { getGrammarReading } from '../utils/japanese';
+import { speakJapanese } from '../utils/speech';
 import type { Grammar } from '../types';
 
 const HIRAGANA_INDEX = [
@@ -192,7 +193,21 @@ function GrammarCard({ grammar }: { grammar: Grammar }) {
     >
       <div className="flex items-center justify-between gap-3">
         <div>
-          <h3 className="text-xl font-semibold leading-tight">{grammar.pattern}</h3>
+          <div className="flex items-center gap-2">
+            <h3 className="text-xl font-semibold leading-tight">{grammar.pattern}</h3>
+            <button
+              type="button"
+              aria-label="発音を再生"
+              onClick={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                speakJapanese(getGrammarReading(grammar.pattern) ?? grammar.pattern);
+              }}
+              className="text-sm text-white/70 hover:text-white transition"
+            >
+              🔊
+            </button>
+          </div>
           {getGrammarReading(grammar.pattern) && (
             <p className="text-xs text-white/60 mt-1">読み: {getGrammarReading(grammar.pattern)}</p>
           )}

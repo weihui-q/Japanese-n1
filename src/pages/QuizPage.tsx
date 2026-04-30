@@ -1,6 +1,7 @@
 ﻿import { useState, useEffect } from 'react';
 import { useAppStore } from '../store/appStore';
 import { getGrammarReading } from '../utils/japanese';
+import { speakJapanese } from '../utils/speech';
 import type { Word, Grammar } from '../types';
 
 type QuizType = 'words' | 'grammar' | 'all';
@@ -238,10 +239,22 @@ export default function QuizPage() {
               {currentQuestion.type === 'word' ? (
                 // 单词：显示 kanji，选择中文意思
                 <div className="text-center mb-4">
-                  <div className="text-2xl md:text-3xl font-bold mb-1">
-                    {(currentQuestion.item as Word).kanji}
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="text-2xl md:text-3xl font-bold">
+                      {(currentQuestion.item as Word).kanji}
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-white/60">
+                      <span>読み: {(currentQuestion.item as Word).kana}</span>
+                      <button
+                        type="button"
+                        aria-label="発音を再生"
+                        onClick={() => speakJapanese((currentQuestion.item as Word).kana)}
+                        className="text-white/70 hover:text-white transition"
+                      >
+                        🔊
+                      </button>
+                    </div>
                   </div>
-                  <div className="text-sm text-white/60 mb-3">読み: {(currentQuestion.item as Word).kana}</div>
                   {currentQuestion.answered && currentQuestion.selectedMeaning && (
                     <div className="text-sm opacity-80 bg-white/10 rounded-2xl p-4 mx-auto max-w-2xl">
                       <strong>{currentQuestion.selectedMeaning.meaning}</strong>
@@ -257,12 +270,24 @@ export default function QuizPage() {
               ) : (
                 // 语法：显示文法形式，选择中文意思
                 <div className="text-center mb-4">
-                  <div className="text-2xl md:text-3xl font-bold mb-1">
-                    {(currentQuestion.item as Grammar).pattern}
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="text-2xl md:text-3xl font-bold">
+                      {(currentQuestion.item as Grammar).pattern}
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-white/60">
+                      {getGrammarReading((currentQuestion.item as Grammar).pattern) && (
+                        <span>読み: {getGrammarReading((currentQuestion.item as Grammar).pattern)}</span>
+                      )}
+                      <button
+                        type="button"
+                        aria-label="発音を再生"
+                        onClick={() => speakJapanese(getGrammarReading((currentQuestion.item as Grammar).pattern) ?? (currentQuestion.item as Grammar).pattern)}
+                        className="text-white/70 hover:text-white transition"
+                      >
+                        🔊
+                      </button>
+                    </div>
                   </div>
-                  {getGrammarReading((currentQuestion.item as Grammar).pattern) && (
-                    <div className="text-sm text-white/60 mb-3">読み: {getGrammarReading((currentQuestion.item as Grammar).pattern)}</div>
-                  )}
                   {currentQuestion.answered && (
                     <div className="text-sm opacity-80 bg-white/10 rounded-2xl p-4 mx-auto max-w-2xl">
                       <strong>{(currentQuestion.item as Grammar).meaning}</strong>
