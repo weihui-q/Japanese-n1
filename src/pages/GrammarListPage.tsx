@@ -5,11 +5,11 @@ import { speakJapanese } from '../utils/speech';
 import type { Grammar } from '../types';
 
 const HIRAGANA_INDEX = [
-  ['あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ'],
-  ['い', 'き', 'し', 'ち', 'に', 'ひ', 'み', 'り'],
-  ['う', 'く', 'す', 'つ', 'ぬ', 'ふ', 'む', 'る'],
-  ['え', 'け', 'せ', 'て', 'ね', 'へ', 'め', 'れ'],
-  ['お', 'こ', 'そ', 'と', 'の', 'ほ', 'も', 'よ', 'ろ', 'を'],
+  ['あ', 'か', 'が', 'さ', 'ざ', 'た', 'だ', 'な', 'は', 'ば', 'ぱ', 'ま', 'や', 'ら', 'わ'],
+  ['い', 'き', 'ぎ', 'し', 'じ', 'ち', 'ぢ', 'に', 'ひ', 'び', 'ぴ', 'み', '', 'り', ''],
+  ['う', 'く', 'ぐ', 'す', 'ず', 'つ', 'づ', 'ぬ', 'ふ', 'ぶ', 'ぷ', 'む', 'ゆ', 'る', ''],
+  ['え', 'け', 'げ', 'せ', 'ぜ', 'て', 'で', 'ね', 'へ', 'べ', 'ぺ', 'め', '', 'れ', ''],
+  ['お', 'こ', 'ご', 'そ', 'ぞ', 'と', 'ど', 'の', 'ほ', 'ぼ', 'ぽ', 'も', 'よ', 'ろ', 'を'],
 ];
 
 function getGrammarStartKana(pattern: string) {
@@ -76,33 +76,37 @@ export default function GrammarListPage() {
 
       {/* 五十音インデックス */}
       <div className="bg-white/10 backdrop-blur-md rounded-xl p-4">
-        <div className="space-y-1">
-          {HIRAGANA_INDEX.map((row, rowIndex) => (
-            <div key={rowIndex} className="flex gap-1 justify-center">
-              {row.map((kana) => {
-                const count = grammar.filter(g => getGrammarStartKana(g.pattern) === kana).length;
-                const isActive = selectedKana === kana;
-                return (
-                  <button
-                    key={kana}
-                    type="button"
-                    onClick={() => setSelectedKana(isActive ? '' : kana)}
-                    className={`flex-1 max-w-[60px] py-2 px-1 rounded-lg transition-all text-sm font-medium ${
-                      isActive
-                        ? 'bg-white/40 text-white scale-110'
-                        : count > 0
-                        ? 'bg-white/15 text-white/90 hover:bg-white/25'
-                        : 'bg-white/5 text-white/30 cursor-not-allowed'
-                    }`}
-                    disabled={count === 0}
-                  >
+        <div className="grid grid-cols-[repeat(15,40px)] gap-px justify-center">
+          {HIRAGANA_INDEX.flatMap((row, rowIndex) =>
+            row.map((kana, colIndex) => {
+              const key = `${rowIndex}-${colIndex}`;
+              if (!kana) {
+                return <div key={key} className="aspect-square w-[40px] rounded-lg bg-white/5" />;
+              }
+              const count = grammar.filter(g => getGrammarStartKana(g.pattern) === kana).length;
+              const isActive = selectedKana === kana;
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  onClick={() => setSelectedKana(isActive ? '' : kana)}
+                  className={`aspect-square w-[40px] rounded-lg transition-all text-[11px] font-medium ${
+                    isActive
+                      ? 'bg-white/40 text-white scale-110'
+                      : count > 0
+                      ? 'bg-white/15 text-white/90 hover:bg-white/25'
+                      : 'bg-white/5 text-white/30 cursor-not-allowed'
+                  }`}
+                  disabled={count === 0}
+                >
+                  <div className="flex h-full flex-col items-center justify-center gap-0.5 px-0.5">
                     <div>{kana}</div>
-                    {count > 0 && <div className="text-xs opacity-60">{count}</div>}
-                  </button>
-                );
-              })}
-            </div>
-          ))}
+                    {count > 0 && <div className="text-[9px] opacity-60">{count}</div>}
+                  </div>
+                </button>
+              );
+            })
+          )}
         </div>
         {selectedKana && (
           <div className="mt-3 text-center">
@@ -111,7 +115,7 @@ export default function GrammarListPage() {
               onClick={() => setSelectedKana('')}
               className="text-sm text-white/70 hover:text-white underline"
             >
-              フィルターをクリア (選択中: {selectedKana}行)
+              フィルターをクリア (選択中: {selectedKana})
             </button>
           </div>
         )}
