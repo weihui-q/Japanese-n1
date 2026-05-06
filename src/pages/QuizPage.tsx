@@ -173,9 +173,9 @@ export default function QuizPage() {
   const currentQuestion = questionHistory[currentQuestionIndex];
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
-      <div className="flex-1 overflow-hidden">
-        <div className="max-w-6xl mx-auto h-full px-6 py-6 space-y-5 overflow-hidden">
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-1 overflow-y-auto">
+        <div className="max-w-6xl mx-auto px-6 py-6 space-y-5">
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">テスト</h1>
 
           {/* 题目类型选择 */}

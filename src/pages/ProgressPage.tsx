@@ -61,7 +61,7 @@ export default function ProgressPage() {
                   <span className="text-lg">✓</span>
                   <span>正解 ({wordProgress.filter(p => p.correctCount > 0).length}語)</span>
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto min-h-0 pr-1 scrollbar-custom">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto min-h-0 pr-1 scrollbar-custom">
                   {wordProgress
                     .filter(p => p.correctCount > 0)
                     .slice(0, 15)
@@ -69,17 +69,30 @@ export default function ProgressPage() {
                       const word = words.find(w => w.id === p.itemId);
                       if (!word) return null;
                       const incorrectCount = p.reviewCount - p.correctCount;
+                      const displayText = word.kanji || word.kana;
                       return (
-                        <div key={p.itemId} className="bg-green-500/10 rounded-lg p-2 text-sm">
-                          <div className="flex items-center justify-between">
+                        <div key={p.itemId} className="bg-green-500/10 rounded-lg p-2 text-sm group relative overflow-hidden">
+                          <div className="flex items-center justify-between min-w-0">
                             <div className="flex items-baseline gap-2 flex-1 min-w-0">
-                              <span className="font-bold truncate">{word.kanji}</span>
-                              <span className="text-xs opacity-70 flex-shrink-0">{word.kana}</span>
+                              <span
+                                className="font-bold break-all"
+                                title={`${word.kanji} (${word.kana})`}
+                              >
+                                {displayText}
+                              </span>
                             </div>
                             <div className="flex items-center gap-2 text-xs flex-shrink-0 ml-2">
                               <span className="text-green-400 font-medium">○{p.correctCount}</span>
                               {incorrectCount > 0 && <span className="text-red-400">×{incorrectCount}</span>}
                               <span className="opacity-50">({p.reviewCount})</span>
+                            </div>
+                          </div>
+                          {/* Hover tooltip */}
+                          <div className="absolute left-0 top-full mt-1 bg-black/80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10 whitespace-nowrap max-w-xs">
+                            <div className="font-bold">{word.kanji}</div>
+                            <div className="opacity-80">{word.kana}</div>
+                            <div className="mt-1 opacity-70">
+                              {word.meanings[0]?.meaning}
                             </div>
                           </div>
                         </div>
@@ -105,17 +118,30 @@ export default function ProgressPage() {
                       const word = words.find(w => w.id === p.itemId);
                       if (!word) return null;
                       const incorrectCount = p.reviewCount - p.correctCount;
+                      const displayText = word.kanji || word.kana;
                       return (
-                        <div key={p.itemId} className="bg-red-500/10 rounded-lg p-2 text-sm">
-                          <div className="flex items-center justify-between">
+                        <div key={p.itemId} className="bg-red-500/10 rounded-lg p-2 text-sm group relative overflow-hidden">
+                          <div className="flex items-center justify-between min-w-0">
                             <div className="flex items-baseline gap-2 flex-1 min-w-0">
-                              <span className="font-bold truncate">{word.kanji}</span>
-                              <span className="text-xs opacity-70 flex-shrink-0">{word.kana}</span>
+                              <span
+                                className="font-bold break-all"
+                                title={`${word.kanji} (${word.kana})`}
+                              >
+                                {displayText}
+                              </span>
                             </div>
                             <div className="flex items-center gap-2 text-xs flex-shrink-0 ml-2">
                               {p.correctCount > 0 && <span className="text-green-400">○{p.correctCount}</span>}
                               <span className="text-red-400 font-medium">×{incorrectCount}</span>
                               <span className="opacity-50">({p.reviewCount})</span>
+                            </div>
+                          </div>
+                          {/* Hover tooltip */}
+                          <div className="absolute left-0 top-full mt-1 bg-black/80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10 whitespace-nowrap max-w-xs">
+                            <div className="font-bold">{word.kanji}</div>
+                            <div className="opacity-80">{word.kana}</div>
+                            <div className="mt-1 opacity-70">
+                              {word.meanings[0]?.meaning}
                             </div>
                           </div>
                         </div>
