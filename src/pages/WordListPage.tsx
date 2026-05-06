@@ -240,6 +240,9 @@ export default function WordListPage() {
 
 function WordCard({ word }: { word: Word }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const toggleFavorite = useAppStore(state => state.toggleFavorite);
+  const favorites = useAppStore(state => state.favorites);
+  const isFavorited = favorites.some(f => f.itemId === word.id && f.itemType === 'word');
 
   const formatExample = (text: string) =>
     text.replace(/{kanji}/g, word.kanji).replace(/{kana}/g, word.kana);
@@ -248,9 +251,21 @@ function WordCard({ word }: { word: Word }) {
 
   return (
     <div
-      className="bg-white/10 backdrop-blur-md rounded-xl p-4 text-white cursor-pointer hover:bg-white/20 transition-all hover:scale-105"
+      className="relative bg-white/10 backdrop-blur-md rounded-xl p-4 text-white cursor-pointer hover:bg-white/20 transition-all hover:scale-105"
       onClick={() => setIsExpanded(!isExpanded)}
     >
+      <button
+        type="button"
+        aria-label="お気に入り切り替え"
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          toggleFavorite(word.id, 'word');
+        }}
+        className={`absolute top-4 right-4 text-2xl transition ${isFavorited ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+      >
+        {isFavorited ? '★' : '☆'}
+      </button>
       {/* 基本情報 */}
       <div className="mb-3">
         <div className="flex items-baseline gap-2 mb-1">
@@ -258,7 +273,7 @@ function WordCard({ word }: { word: Word }) {
           <span className="text-sm opacity-80">{word.kana}</span>
           <button
             type="button"
-            aria-label="发音を再生"
+            aria-label="発音を再生"
             onClick={(event) => {
               event.preventDefault();
               event.stopPropagation();

@@ -45,6 +45,12 @@ export interface Progress {
   interval: number;        // 復習間隔（日）
 }
 
+// 收藏項目
+export interface FavoriteItem {
+  itemId: string;
+  itemType: 'word' | 'grammar';
+}
+
 // テスト結果
 export interface QuizResult {
   itemId: string;

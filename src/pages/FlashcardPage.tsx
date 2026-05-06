@@ -12,6 +12,8 @@ export default function FlashcardPage() {
   const [isFlipped, setIsFlipped] = useState(false);
   const [studyType, setStudyType] = useState<'all' | 'words' | 'grammar'>('all');
   const [studyItems, setStudyItems] = useState<Array<Word | Grammar>>([]);
+  const toggleFavorite = useAppStore(state => state.toggleFavorite);
+  const favorites = useAppStore(state => state.favorites);
 
   useEffect(() => {
     let items: Array<Word | Grammar> = [];
@@ -27,6 +29,10 @@ export default function FlashcardPage() {
   }, [studyType, words, grammar]);
 
   const currentItem = studyItems[currentIndex];
+  const currentItemType = currentItem ? ('kanji' in currentItem ? 'word' : 'grammar') : 'word';
+  const isFavorited = currentItem
+    ? favorites.some(f => f.itemId === currentItem.id && f.itemType === currentItemType)
+    : false;
 
   const handleQuality = async (quality: number) => {
     if (!currentItem) return;
@@ -89,6 +95,18 @@ export default function FlashcardPage() {
               className="relative w-full h-full"
               style={{ transformStyle: 'preserve-3d' }}
             >
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  if (!currentItem) return;
+                  toggleFavorite(currentItem.id, currentItemType);
+                }}
+                className={`absolute right-4 top-4 z-20 text-2xl transition ${isFavorited ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+                aria-label="お気に入り切り替え"
+              >
+                {isFavorited ? '★' : '☆'}
+              </button>
               {/* 表面 */}
               {!isFlipped && currentItem && (
                 <div

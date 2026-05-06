@@ -28,6 +28,8 @@ export default function QuizPage() {
   const words = useAppStore(state => state.words);
   const grammar = useAppStore(state => state.grammar);
   const updateProgress = useAppStore(state => state.updateProgress);
+  const favorites = useAppStore(state => state.favorites);
+  const toggleFavorite = useAppStore(state => state.toggleFavorite);
 
   const [quizType, setQuizType] = useState<QuizType>('words');
   const [questionHistory, setQuestionHistory] = useState<QuestionData[]>([]);
@@ -171,6 +173,9 @@ export default function QuizPage() {
   }
 
   const currentQuestion = questionHistory[currentQuestionIndex];
+  const currentQuestionFavorite = currentQuestion
+    ? favorites.some(f => f.itemId === currentQuestion.item.id && f.itemType === currentQuestion.type)
+    : false;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -231,8 +236,8 @@ export default function QuizPage() {
                 <div className="text-sm md:text-base opacity-70 mb-2">
                   {currentQuestion.type === 'word' ? '単語' : '文法'} • {currentQuestion.type === 'word' ? '以下の単語の意味を選んでください' : '以下の文法の意味を選んでください'}
                 </div>
-                <div className="text-sm md:text-base opacity-80">
-                  問題 {currentQuestionIndex + 1} / {questionHistory.length}
+                <div className="flex items-center justify-center gap-3 text-sm md:text-base opacity-80">
+                  <span>問題 {currentQuestionIndex + 1} / {questionHistory.length}</span>
                 </div>
               </div>
 
@@ -240,8 +245,18 @@ export default function QuizPage() {
                 // 单词：显示 kanji，选择中文意思
                 <div className="text-center mb-4">
                   <div className="flex flex-col items-center gap-2">
-                    <div className="text-2xl md:text-3xl font-bold">
-                      {(currentQuestion.item as Word).kanji}
+                    <div className="flex items-center gap-4">
+                      <div className="text-2xl md:text-3xl font-bold">
+                        {(currentQuestion.item as Word).kanji}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => toggleFavorite(currentQuestion.item.id, currentQuestion.type)}
+                        className={`text-4xl transition ${currentQuestionFavorite ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+                        aria-label="お気に入り切り替え"
+                      >
+                        {currentQuestionFavorite ? '★' : '☆'}
+                      </button>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-white/60">
                       <span>読み: {(currentQuestion.item as Word).kana}</span>
@@ -271,8 +286,18 @@ export default function QuizPage() {
                 // 语法：显示文法形式，选择中文意思
                 <div className="text-center mb-4">
                   <div className="flex flex-col items-center gap-2">
-                    <div className="text-2xl md:text-3xl font-bold">
-                      {(currentQuestion.item as Grammar).pattern}
+                    <div className="flex items-center gap-4">
+                      <div className="text-2xl md:text-3xl font-bold">
+                        {(currentQuestion.item as Grammar).pattern}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => toggleFavorite(currentQuestion.item.id, currentQuestion.type)}
+                        className={`text-4xl transition ${currentQuestionFavorite ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+                        aria-label="お気に入り切り替え"
+                      >
+                        {currentQuestionFavorite ? '★' : '☆'}
+                      </button>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-white/60">
                       {getGrammarReading((currentQuestion.item as Grammar).pattern) && (

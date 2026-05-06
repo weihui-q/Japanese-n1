@@ -7,6 +7,7 @@ import WordListPage from './pages/WordListPage';
 import GrammarListPage from './pages/GrammarListPage';
 import FlashcardPage from './pages/FlashcardPage';
 import QuizPage from './pages/QuizPage';
+import FavoritesPage from './pages/FavoritesPage';
 import ProgressPage from './pages/ProgressPage';
 import ImportPage from './pages/ImportPage';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/grammar" element={<GrammarListPage />} />
           <Route path="/flashcard" element={<FlashcardPage />} />
           <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/import" element={<ImportPage />} />
         </Routes>

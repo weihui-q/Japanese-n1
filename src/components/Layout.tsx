@@ -16,12 +16,13 @@ export default function Layout({ children }: LayoutProps) {
     { path: '/grammar', label: '文法', icon: '📝' },
     { path: '/flashcard', label: 'フラッシュカード', icon: '🎴' },
     { path: '/quiz', label: 'テスト', icon: '✅' },
-    { path: '/progress', label: '進捗', icon: '📊' },
-    { path: '/import', label: 'インポート', icon: '📥' },
+    { path: '/favorites', label: 'お気に入り', icon: '⭐' },
+    { path: '/progress', label: '進捗', icon: '📈' },
+    { path: '/import', label: 'インポート', icon: '⬇️' },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex">
+    <div className="min-h-screen flex bg-slate-950 text-white">
       {/* 左侧边栏 */}
       <aside
         className={`fixed left-0 top-0 h-full bg-white/10 backdrop-blur-md border-r border-white/20 transition-all duration-300 z-50 ${
@@ -30,7 +31,7 @@ export default function Layout({ children }: LayoutProps) {
       >
         {/* Logo和折叠按钮 */}
         <div className="p-4 border-b border-white/20">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-2">
             {!isCollapsed && (
               <Link to="/" className="text-white text-xl font-bold">
                 JLPT N1
@@ -51,7 +52,7 @@ export default function Layout({ children }: LayoutProps) {
             <Link
               key={item.path}
               to={item.path}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all group ${
+              className={`relative flex items-center gap-3 px-4 py-3 rounded-lg transition-all group ${
                 location.pathname === item.path
                   ? 'bg-white/20 text-white'
                   : 'text-white/80 hover:bg-white/10 hover:text-white'

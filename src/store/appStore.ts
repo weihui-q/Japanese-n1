@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Word, Grammar, Progress, StudyStats } from '../types';
+import type { Word, Grammar, Progress, StudyStats, FavoriteItem } from '../types';
 import wordsData from '../data/words.json';
 import grammarData from '../data/grammar.json';
 import { getAllProgress, saveProgress, initDB } from '../utils/indexedDB';
@@ -53,6 +53,7 @@ interface AppState {
   words: Word[];
   grammar: Grammar[];
   progresses: Progress[];
+  favorites: FavoriteItem[];
   
   // ローディング状態
   isLoading: boolean;
@@ -71,6 +72,10 @@ interface AppState {
   updateProgress: (itemId: string, itemType: 'word' | 'grammar', quality: number) => Promise<void>;
   getProgress: (itemId: string) => Progress | undefined;
   
+  // 收藏関連
+  toggleFavorite: (itemId: string, itemType: 'word' | 'grammar') => void;
+  isFavorite: (itemId: string, itemType: 'word' | 'grammar') => boolean;
+  
   // 統計
   getStats: () => StudyStats;
   
@@ -83,6 +88,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   words: wordsData as Word[],
   grammar: grammarData as Grammar[],
   progresses: [],
+  favorites: [],
   isLoading: false,
   isInitialized: false,
 
@@ -93,10 +99,12 @@ export const useAppStore = create<AppState>((set, get) => ({
     try {
       await initDB();
       const progresses = await getAllProgress();
-      set({ progresses, isInitialized: true, isLoading: false });
+      const favorites: FavoriteItem[] = JSON.parse(localStorage.getItem('jlptFavorites') || '[]');
+      set({ progresses, favorites, isInitialized: true, isLoading: false });
     } catch (error) {
       console.error('初期化エラー:', error);
-      set({ isLoading: false, isInitialized: true });
+      const favorites: FavoriteItem[] = JSON.parse(localStorage.getItem('jlptFavorites') || '[]');
+      set({ favorites, isLoading: false, isInitialized: true });
     }
   },
 
@@ -137,6 +145,20 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   getProgress: (itemId: string) => {
     return get().progresses.find(p => p.itemId === itemId);
+  },
+
+  toggleFavorite: (itemId: string, itemType: 'word' | 'grammar') => {
+    const favorites = get().favorites;
+    const exists = favorites.some(f => f.itemId === itemId && f.itemType === itemType);
+    const nextFavorites = exists
+      ? favorites.filter(f => !(f.itemId === itemId && f.itemType === itemType))
+      : [...favorites, { itemId, itemType }];
+    localStorage.setItem('jlptFavorites', JSON.stringify(nextFavorites));
+    set({ favorites: nextFavorites });
+  },
+
+  isFavorite: (itemId: string, itemType: 'word' | 'grammar') => {
+    return get().favorites.some(f => f.itemId === itemId && f.itemType === itemType);
   },
 
   getStats: () => {

@@ -179,6 +179,9 @@ export default function GrammarListPage() {
 
 function GrammarCard({ grammar }: { grammar: Grammar }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const toggleFavorite = useAppStore(state => state.toggleFavorite);
+  const favorites = useAppStore(state => state.favorites);
+  const isFavorited = favorites.some(f => f.itemId === grammar.id && f.itemType === 'grammar');
   const visibleExamples = useMemo(
     () =>
       grammar.examples.filter(
@@ -192,10 +195,22 @@ function GrammarCard({ grammar }: { grammar: Grammar }) {
 
   return (
     <div
-      className="bg-white/10 backdrop-blur-md rounded-2xl p-4 text-white cursor-pointer hover:bg-white/20 transition-all border border-white/10"
+      className="relative bg-white/10 backdrop-blur-md rounded-2xl p-4 text-white cursor-pointer hover:bg-white/20 transition-all border border-white/10"
       onClick={() => setIsExpanded(!isExpanded)}
     >
-      <div className="flex items-center justify-between gap-3">
+      <button
+        type="button"
+        aria-label="お気に入り切り替え"
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          toggleFavorite(grammar.id, 'grammar');
+        }}
+        className={`absolute top-4 right-4 text-2xl transition ${isFavorited ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+      >
+        {isFavorited ? '★' : '☆'}
+      </button>
+      <div className="flex items-center justify-between gap-3 pr-10">
         <div>
           <div className="flex items-center gap-2">
             <h3 className="text-xl font-semibold leading-tight">{grammar.pattern}</h3>

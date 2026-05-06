@@ -7,6 +7,8 @@ export default function ProgressPage() {
   const grammar = useAppStore(state => state.grammar);
 
   const stats = getStats();
+  const favorites = useAppStore(state => state.favorites);
+  const toggleFavorite = useAppStore(state => state.toggleFavorite);
 
   const wordProgress = progresses.filter(p => p.itemType === 'word');
   const grammarProgress = progresses.filter(p => p.itemType === 'grammar');
@@ -61,7 +63,7 @@ export default function ProgressPage() {
                   <span className="text-lg">✓</span>
                   <span>正解 ({wordProgress.filter(p => p.correctCount > 0).length}語)</span>
                 </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto min-h-0 pr-1 scrollbar-custom">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 overflow-y-auto min-h-0 pr-1 scrollbar-custom">
                   {wordProgress
                     .filter(p => p.correctCount > 0)
                     .slice(0, 15)
@@ -73,15 +75,23 @@ export default function ProgressPage() {
                       return (
                         <div key={p.itemId} className="bg-green-500/10 rounded-lg p-2 text-sm group relative overflow-hidden">
                           <div className="flex items-center justify-between min-w-0">
-                            <div className="flex items-baseline gap-2 flex-1 min-w-0">
+                            <div className="flex items-center gap-2 flex-1 min-w-0">
                               <span
-                                className="font-bold break-all"
+                                className="font-bold truncate whitespace-nowrap"
                                 title={`${word.kanji} (${word.kana})`}
                               >
                                 {displayText}
                               </span>
                             </div>
                             <div className="flex items-center gap-2 text-xs flex-shrink-0 ml-2">
+                              <button
+                                type="button"
+                                onClick={() => toggleFavorite(word.id, 'word')}
+                                className={`text-xl transition ${favorites.some(f => f.itemId === word.id && f.itemType === 'word') ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+                                aria-label="お気に入り切り替え"
+                              >
+                                {favorites.some(f => f.itemId === word.id && f.itemType === 'word') ? '★' : '☆'}
+                              </button>
                               <span className="text-green-400 font-medium">○{p.correctCount}</span>
                               {incorrectCount > 0 && <span className="text-red-400">×{incorrectCount}</span>}
                               <span className="opacity-50">({p.reviewCount})</span>
@@ -110,7 +120,7 @@ export default function ProgressPage() {
                   <span className="text-lg">✗</span>
                   <span>錯誤 ({wordProgress.filter(p => p.reviewCount > p.correctCount).length}語)</span>
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 overflow-y-auto min-h-0 pr-1 scrollbar-custom">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 overflow-y-auto min-h-0 pr-1 scrollbar-custom">
                   {wordProgress
                     .filter(p => p.reviewCount > p.correctCount)
                     .slice(0, 15)
@@ -122,15 +132,23 @@ export default function ProgressPage() {
                       return (
                         <div key={p.itemId} className="bg-red-500/10 rounded-lg p-2 text-sm group relative overflow-hidden">
                           <div className="flex items-center justify-between min-w-0">
-                            <div className="flex items-baseline gap-2 flex-1 min-w-0">
+                            <div className="flex items-center gap-2 flex-1 min-w-0">
                               <span
-                                className="font-bold break-all"
+                                className="font-bold truncate whitespace-nowrap"
                                 title={`${word.kanji} (${word.kana})`}
                               >
                                 {displayText}
                               </span>
                             </div>
                             <div className="flex items-center gap-2 text-xs flex-shrink-0 ml-2">
+                              <button
+                                type="button"
+                                onClick={() => toggleFavorite(word.id, 'word')}
+                                className={`text-xl transition ${favorites.some(f => f.itemId === word.id && f.itemType === 'word') ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+                                aria-label="お気に入り切り替え"
+                              >
+                                {favorites.some(f => f.itemId === word.id && f.itemType === 'word') ? '★' : '☆'}
+                              </button>
                               {p.correctCount > 0 && <span className="text-green-400">○{p.correctCount}</span>}
                               <span className="text-red-400 font-medium">×{incorrectCount}</span>
                               <span className="opacity-50">({p.reviewCount})</span>
@@ -163,10 +181,21 @@ export default function ProgressPage() {
               {grammarProgress.slice(0, 10).map((p) => {
                 const g = grammar.find(item => item.id === p.itemId);
                 if (!g) return null;
+                const isFavorited = favorites.some(f => f.itemId === g.id && f.itemType === 'grammar');
                 return (
                   <div key={p.itemId} className="flex items-center gap-4">
                     <div className="flex-1">
-                      <span className="font-bold">{g.pattern}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold">{g.pattern}</span>
+                        <button
+                          type="button"
+                          onClick={() => toggleFavorite(g.id, 'grammar')}
+                          className={`text-xl transition ${isFavorited ? 'text-yellow-300' : 'text-white/70 hover:text-white'}`}
+                          aria-label="お気に入り切り替え"
+                        >
+                          {isFavorited ? '★' : '☆'}
+                        </button>
+                      </div>
                     </div>
                     <div className="text-right">
                       <div className="text-sm">{getMasteryLabel(p.masteryLevel)}</div>
