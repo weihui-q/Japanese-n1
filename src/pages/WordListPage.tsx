@@ -10,6 +10,14 @@ const HIRAGANA_INDEX = [
   ['お', 'こ', 'ご', 'そ', 'ぞ', 'と', 'ど', 'の', 'ほ', 'ぼ', 'ぽ', 'も', 'よ', 'ろ', 'を'],
 ];
 
+const KATAKANA_INDEX = [
+  ['ア', 'カ', 'ガ', 'サ', 'ザ', 'タ', 'ダ', 'ナ', 'ハ', 'バ', 'パ', 'マ', 'ヤ', 'ラ', 'ワ'],
+  ['イ', 'キ', 'ギ', 'シ', 'ジ', 'チ', 'ヂ', 'ニ', 'ヒ', 'ビ', 'ピ', 'ミ', '', 'リ', ''],
+  ['ウ', 'ク', 'グ', 'ス', 'ズ', 'ツ', 'ヅ', 'ヌ', 'フ', 'ブ', 'プ', 'ム', 'ユ', 'ル', ''],
+  ['エ', 'ケ', 'ゲ', 'セ', 'ゼ', 'テ', 'デ', 'ネ', 'ヘ', 'ベ', 'ペ', 'メ', '', 'レ', ''],
+  ['オ', 'コ', 'ゴ', 'ソ', 'ゾ', 'ト', 'ド', 'ノ', 'ホ', 'ボ', 'ポ', 'モ', 'ヨ', 'ロ', 'ヲ'],
+];
+
 // 五十音に一致するかどうかをチェック
 function matchesKanaIndex(kana: string, selectedKana: string): boolean {
   if (!selectedKana) return true;
@@ -44,6 +52,7 @@ export default function WordListPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedKana, setSelectedKana] = useState('');
+  const [activeScript, setActiveScript] = useState<'hiragana' | 'katakana'>('hiragana');
   const [selectedPartOfSpeech, setSelectedPartOfSpeech] = useState('');
 
   const categories = Array.from(new Set(words.map(w => w.category)));
@@ -69,14 +78,46 @@ export default function WordListPage() {
     });
   }, [words, searchTerm, selectedCategory, selectedKana, selectedPartOfSpeech]);
 
+  const kanaIndex = activeScript === 'hiragana' ? HIRAGANA_INDEX : KATAKANA_INDEX;
+
   return (
     <div className="space-y-6 h-full overflow-y-auto scrollbar-custom pb-6">
       <h1 className="text-4xl font-bold text-white mb-6">単語一覧</h1>
 
       {/* 五十音インデックス */}
       <div className="bg-white/10 backdrop-blur-md rounded-xl p-4">
+        <div className="mb-3 flex items-center justify-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              setActiveScript('hiragana');
+              setSelectedKana('');
+            }}
+            className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+              activeScript === 'hiragana'
+                ? 'bg-white/30 text-white'
+                : 'bg-white/10 text-white/70 hover:bg-white/20'
+            }`}
+          >
+            平仮名
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setActiveScript('katakana');
+              setSelectedKana('');
+            }}
+            className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+              activeScript === 'katakana'
+                ? 'bg-white/30 text-white'
+                : 'bg-white/10 text-white/70 hover:bg-white/20'
+            }`}
+          >
+            片仮名
+          </button>
+        </div>
         <div className="grid grid-cols-[repeat(15,40px)] gap-px justify-center">
-          {HIRAGANA_INDEX.flatMap((row, rowIndex) =>
+          {kanaIndex.flatMap((row, rowIndex) =>
             row.map((kana, colIndex) => {
               const key = `${rowIndex}-${colIndex}`;
               if (!kana) {
