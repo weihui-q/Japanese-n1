@@ -26,19 +26,19 @@ export default function FlashcardPage() {
       items = [...items, ...grammar];
     }
 
-    // 根据学习模式过滤项目
+    // 学習モードに応じてアイテムをフィルタリング
     const filteredItems = items.filter(item => {
       const progress = progresses.find(p => p.itemId === item.id && p.itemType === ('kanji' in item ? 'word' : 'grammar'));
       if (studyMode === 'new') {
-        // 新学：从未学习过的项目（没有进度记录或masteryLevel为0）
+        // 新規：未学習のアイテム（進捗記録がないか masteryLevel が 0）
         return !progress || progress.masteryLevel === 0;
       } else {
-        // 复习：已经学习过的项目
+        // 復習：既に学習済みのアイテム
         return progress && progress.masteryLevel > 0;
       }
     });
 
-    // 随机排序
+    // ランダムシャッフル
     const shuffledItems = filteredItems.sort(() => Math.random() - 0.5);
 
     setStudyItems(shuffledItems);
@@ -71,13 +71,15 @@ export default function FlashcardPage() {
   };
 
   const goToPrevious = () => {
+    if (currentIndex <= 0) return;
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev - 1 + studyItems.length) % studyItems.length);
+    setCurrentIndex((prev) => prev - 1);
   };
 
   const goToNext = () => {
+    if (currentIndex >= studyItems.length - 1) return;
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev + 1) % studyItems.length);
+    setCurrentIndex((prev) => prev + 1);
   };
 
   if (studyItems.length === 0) {
@@ -89,7 +91,7 @@ export default function FlashcardPage() {
   }
 
   return (
-    <div className="space-y-4 h-full overflow-hidden">
+    <div className="space-y-4 h-full overflow-y-auto">
       <h1 className="text-3xl font-bold text-white mb-4">フラッシュカード</h1>
 
       {/* 学習タイプとモード選択 */}
@@ -123,7 +125,7 @@ export default function FlashcardPage() {
                   : 'bg-white/10 text-white/70 hover:bg-white/20'
               }`}
             >
-              {mode === 'new' ? '新学' : '复习'}
+              {mode === 'new' ? '新規' : '復習'}
             </button>
           ))}
         </div>
@@ -227,47 +229,53 @@ export default function FlashcardPage() {
         </div>
       </div>
 
-      {/* ナビゲーションボタン */}
-      <div className="flex gap-4 justify-center mt-6">
+      {/* ナビゲーションと評価ボタン */}
+      <div className="flex flex-wrap gap-4 justify-center items-center mt-6">
         <button
           onClick={goToPrevious}
-          disabled={studyItems.length <= 1}
+          disabled={currentIndex <= 0}
           className="bg-white/10 hover:bg-white/20 disabled:bg-white/5 disabled:cursor-not-allowed text-white px-6 py-3 rounded-lg transition-all"
         >
-          上一张
+          前へ
         </button>
+
+        {isFlipped ? (
+          <>
+            <button
+              onClick={() => handleQuality(1)}
+              className="bg-red-500/30 hover:bg-red-500/50 text-white px-6 py-3 rounded-lg transition-all"
+            >
+              難しい
+            </button>
+            <button
+              onClick={() => handleQuality(3)}
+              className="bg-yellow-500/30 hover:bg-yellow-500/50 text-white px-6 py-3 rounded-lg transition-all"
+            >
+              まあまあ
+            </button>
+            <button
+              onClick={() => handleQuality(5)}
+              className="bg-green-500/30 hover:bg-green-500/50 text-white px-6 py-3 rounded-lg transition-all"
+            >
+              簡単
+            </button>
+          </>
+        ) : (
+          <div className="flex gap-4">
+            <div className="w-24 h-12 rounded-lg bg-white/5 opacity-50"></div>
+            <div className="w-24 h-12 rounded-lg bg-white/5 opacity-50"></div>
+            <div className="w-24 h-12 rounded-lg bg-white/5 opacity-50"></div>
+          </div>
+        )}
+
         <button
           onClick={goToNext}
-          disabled={studyItems.length <= 1}
+          disabled={currentIndex >= studyItems.length - 1}
           className="bg-white/10 hover:bg-white/20 disabled:bg-white/5 disabled:cursor-not-allowed text-white px-6 py-3 rounded-lg transition-all"
         >
-          下一张
+          次へ
         </button>
       </div>
-
-      {/* 評価ボタン */}
-      {isFlipped && (
-        <div className="flex gap-4 justify-center">
-          <button
-            onClick={() => handleQuality(1)}
-            className="bg-red-500/30 hover:bg-red-500/50 text-white px-6 py-3 rounded-lg transition-all"
-          >
-            難しい
-          </button>
-          <button
-            onClick={() => handleQuality(3)}
-            className="bg-yellow-500/30 hover:bg-yellow-500/50 text-white px-6 py-3 rounded-lg transition-all"
-          >
-            まあまあ
-          </button>
-          <button
-            onClick={() => handleQuality(5)}
-            className="bg-green-500/30 hover:bg-green-500/50 text-white px-6 py-3 rounded-lg transition-all"
-          >
-            簡単
-          </button>
-        </div>
-      )}
     </div>
   );
 }
