@@ -6,11 +6,13 @@ import type { Word, Grammar } from '../types';
 export default function FlashcardPage() {
   const words = useAppStore(state => state.words);
   const grammar = useAppStore(state => state.grammar);
+  const progresses = useAppStore(state => state.progresses);
   const updateProgress = useAppStore(state => state.updateProgress);
-  
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [studyType, setStudyType] = useState<'all' | 'words' | 'grammar'>('all');
+  const [studyMode, setStudyMode] = useState<'new' | 'review'>('new');
   const [studyItems, setStudyItems] = useState<Array<Word | Grammar>>([]);
   const toggleFavorite = useAppStore(state => state.toggleFavorite);
   const favorites = useAppStore(state => state.favorites);
@@ -23,10 +25,26 @@ export default function FlashcardPage() {
     if (studyType === 'all' || studyType === 'grammar') {
       items = [...items, ...grammar];
     }
-    setStudyItems(items);
+
+    // 根据学习模式过滤项目
+    const filteredItems = items.filter(item => {
+      const progress = progresses.find(p => p.itemId === item.id && p.itemType === ('kanji' in item ? 'word' : 'grammar'));
+      if (studyMode === 'new') {
+        // 新学：从未学习过的项目（没有进度记录或masteryLevel为0）
+        return !progress || progress.masteryLevel === 0;
+      } else {
+        // 复习：已经学习过的项目
+        return progress && progress.masteryLevel > 0;
+      }
+    });
+
+    // 随机排序
+    const shuffledItems = filteredItems.sort(() => Math.random() - 0.5);
+
+    setStudyItems(shuffledItems);
     setCurrentIndex(0);
     setIsFlipped(false);
-  }, [studyType, words, grammar]);
+  }, [studyType, studyMode, words, grammar, progresses]);
 
   const currentItem = studyItems[currentIndex];
   const currentItemType = currentItem ? ('kanji' in currentItem ? 'word' : 'grammar') : 'word';
@@ -42,14 +60,24 @@ export default function FlashcardPage() {
 
   const handleQuality = async (quality: number) => {
     if (!currentItem) return;
-    
+
     const itemType = 'kanji' in currentItem ? 'word' : 'grammar';
     await updateProgress(currentItem.id, itemType, quality);
-    
+
     setIsFlipped(false);
     setTimeout(() => {
       setCurrentIndex((prev) => (prev + 1) % studyItems.length);
     }, 200);
+  };
+
+  const goToPrevious = () => {
+    setIsFlipped(false);
+    setCurrentIndex((prev) => (prev - 1 + studyItems.length) % studyItems.length);
+  };
+
+  const goToNext = () => {
+    setIsFlipped(false);
+    setCurrentIndex((prev) => (prev + 1) % studyItems.length);
   };
 
   if (studyItems.length === 0) {
@@ -64,21 +92,41 @@ export default function FlashcardPage() {
     <div className="space-y-4 h-full overflow-hidden">
       <h1 className="text-3xl font-bold text-white mb-4">フラッシュカード</h1>
 
-      {/* 学習タイプ選択 */}
-      <div className="flex gap-4 justify-center">
-        {(['all', 'words', 'grammar'] as const).map((type) => (
-          <button
-            key={type}
-            onClick={() => setStudyType(type)}
-            className={`px-6 py-2 rounded-lg transition-all ${
-              studyType === type
-                ? 'bg-white/30 text-white font-semibold'
-                : 'bg-white/10 text-white/70 hover:bg-white/20'
-            }`}
-          >
-            {type === 'all' ? '全て' : type === 'words' ? '単語' : '文法'}
-          </button>
-        ))}
+      {/* 学習タイプとモード選択 */}
+      <div className="flex justify-between items-center">
+        {/* 学習タイプ選択（左側） */}
+        <div className="flex gap-4">
+          {(['all', 'words', 'grammar'] as const).map((type) => (
+            <button
+              key={type}
+              onClick={() => setStudyType(type)}
+              className={`px-6 py-2 rounded-lg transition-all ${
+                studyType === type
+                  ? 'bg-white/30 text-white font-semibold'
+                  : 'bg-white/10 text-white/70 hover:bg-white/20'
+              }`}
+            >
+              {type === 'all' ? '全て' : type === 'words' ? '単語' : '文法'}
+            </button>
+          ))}
+        </div>
+
+        {/* 学習モード選択（右側） */}
+        <div className="flex gap-4">
+          {(['new', 'review'] as const).map((mode) => (
+            <button
+              key={mode}
+              onClick={() => setStudyMode(mode)}
+              className={`px-6 py-2 rounded-lg transition-all ${
+                studyMode === mode
+                  ? 'bg-white/30 text-white font-semibold'
+                  : 'bg-white/10 text-white/70 hover:bg-white/20'
+              }`}
+            >
+              {mode === 'new' ? '新学' : '复习'}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* プログレス */}
@@ -177,6 +225,24 @@ export default function FlashcardPage() {
             </motion.div>
           </AnimatePresence>
         </div>
+      </div>
+
+      {/* ナビゲーションボタン */}
+      <div className="flex gap-4 justify-center mt-6">
+        <button
+          onClick={goToPrevious}
+          disabled={studyItems.length <= 1}
+          className="bg-white/10 hover:bg-white/20 disabled:bg-white/5 disabled:cursor-not-allowed text-white px-6 py-3 rounded-lg transition-all"
+        >
+          上一张
+        </button>
+        <button
+          onClick={goToNext}
+          disabled={studyItems.length <= 1}
+          className="bg-white/10 hover:bg-white/20 disabled:bg-white/5 disabled:cursor-not-allowed text-white px-6 py-3 rounded-lg transition-all"
+        >
+          下一张
+        </button>
       </div>
 
       {/* 評価ボタン */}
