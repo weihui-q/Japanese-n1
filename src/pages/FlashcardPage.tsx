@@ -33,6 +33,12 @@ export default function FlashcardPage() {
   const isFavorited = currentItem
     ? favorites.some(f => f.itemId === currentItem.id && f.itemType === currentItemType)
     : false;
+  const currentWordDisplayText = currentItem && 'kanji' in currentItem
+    ? (currentItem.kanji || currentItem.kana)
+    : '';
+  const currentWordHasKanji = currentItem && 'kanji' in currentItem
+    ? Boolean(currentItem.kanji?.trim())
+    : false;
 
   const handleQuality = async (quality: number) => {
     if (!currentItem) return;
@@ -115,8 +121,10 @@ export default function FlashcardPage() {
                 >
                   {'kanji' in currentItem ? (
                     <>
-                      <div className="text-6xl font-bold mb-4">{currentItem.kanji}</div>
-                      <div className="text-2xl opacity-80">{currentItem.kana}</div>
+                      <div className="text-6xl font-bold mb-4">{currentWordDisplayText}</div>
+                      {currentWordHasKanji && (
+                        <div className="text-2xl opacity-80">{currentItem.kana}</div>
+                      )}
                     </>
                   ) : (
                     <div className="text-4xl font-bold text-center">{currentItem.pattern}</div>

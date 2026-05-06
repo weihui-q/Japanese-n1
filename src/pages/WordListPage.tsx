@@ -244,6 +244,9 @@ function WordCard({ word }: { word: Word }) {
   const favorites = useAppStore(state => state.favorites);
   const isFavorited = favorites.some(f => f.itemId === word.id && f.itemType === 'word');
 
+  const displayText = word.kanji || word.kana;
+  const hasKanji = Boolean(word.kanji && word.kanji.trim());
+
   const formatExample = (text: string) =>
     text.replace(/{kanji}/g, word.kanji).replace(/{kana}/g, word.kana);
 
@@ -269,8 +272,8 @@ function WordCard({ word }: { word: Word }) {
       {/* 基本情報 */}
       <div className="mb-3">
         <div className="flex items-baseline gap-2 mb-1">
-          <h3 className="text-xl font-bold">{word.kanji}</h3>
-          <span className="text-sm opacity-80">{word.kana}</span>
+          <h3 className="text-xl font-bold">{displayText}</h3>
+          {hasKanji && <span className="text-sm opacity-80">{word.kana}</span>}
           <button
             type="button"
             aria-label="発音を再生"

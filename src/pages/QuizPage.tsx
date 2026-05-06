@@ -176,6 +176,12 @@ export default function QuizPage() {
   const currentQuestionFavorite = currentQuestion
     ? favorites.some(f => f.itemId === currentQuestion.item.id && f.itemType === currentQuestion.type)
     : false;
+  const currentWordDisplayText = currentQuestion && currentQuestion.type === 'word'
+    ? ((currentQuestion.item as Word).kanji || (currentQuestion.item as Word).kana)
+    : '';
+  const currentWordHasKanji = currentQuestion && currentQuestion.type === 'word'
+    ? Boolean((currentQuestion.item as Word).kanji?.trim())
+    : false;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -242,12 +248,12 @@ export default function QuizPage() {
               </div>
 
               {currentQuestion.type === 'word' ? (
-                // 单词：显示 kanji，选择中文意思
+                // 单词：显示 kanji 或假名，选择中文意思
                 <div className="text-center mb-4">
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex items-center gap-4">
                       <div className="text-2xl md:text-3xl font-bold">
-                        {(currentQuestion.item as Word).kanji}
+                        {currentWordDisplayText}
                       </div>
                       <button
                         type="button"
@@ -259,15 +265,28 @@ export default function QuizPage() {
                       </button>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-white/60">
-                      <span>読み: {(currentQuestion.item as Word).kana}</span>
-                      <button
-                        type="button"
-                        aria-label="発音を再生"
-                        onClick={() => speakJapanese((currentQuestion.item as Word).kana)}
-                        className="text-white/70 hover:text-white transition"
-                      >
-                        🔊
-                      </button>
+                      {currentWordHasKanji ? (
+                        <>
+                          <span>読み: {(currentQuestion.item as Word).kana}</span>
+                          <button
+                            type="button"
+                            aria-label="発音を再生"
+                            onClick={() => speakJapanese((currentQuestion.item as Word).kana)}
+                            className="text-white/70 hover:text-white transition"
+                          >
+                            🔊
+                          </button>
+                        </>
+                      ) : (
+                        <button
+                          type="button"
+                          aria-label="発音を再生"
+                          onClick={() => speakJapanese((currentQuestion.item as Word).kana)}
+                          className="text-sm text-white/70 hover:text-white transition"
+                        >
+                          🔊
+                        </button>
+                      )}
                     </div>
                   </div>
                   {currentQuestion.answered && currentQuestion.selectedMeaning && (
