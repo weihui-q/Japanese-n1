@@ -267,6 +267,9 @@ function WordCard({ word }: { word: Word }) {
               <span key={i} className={`text-sm ${i <= word.difficulty ? 'text-yellow-400' : 'opacity-30'}`}>★</span>
             ))}
           </div>
+          {word.importedAt && (
+            <p className="text-xs text-white/60">インポート: {new Date(word.importedAt).toLocaleString()}</p>
+          )}
         </div>
       )}
 

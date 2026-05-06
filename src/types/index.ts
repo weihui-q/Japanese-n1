@@ -13,6 +13,7 @@ export interface Word {
   difficulty: number;   // 難易度 1-5
   tags: string[];       // タグ
   partOfSpeech?: string; // 品詞
+  importedAt?: string;  // インポート日時
 }
 
 // 文法データ構造
@@ -28,6 +29,7 @@ export interface Grammar {
   level: 'N1';
   category: string;
   tags: string[];
+  importedAt?: string;  // インポート日時
 }
 
 // 学習進捗

@@ -20,11 +20,17 @@ export default function ImportPage() {
       }
 
       if (importType === 'words') {
-        importWords(data as Word[]);
-        setMessage({ type: 'success', text: `${data.length}個の単語をインポートしました` });
+        const { added, skipped } = importWords(data as Word[]);
+        setMessage({
+          type: 'success',
+          text: `${added}個の単語をインポートしました${skipped > 0 ? `（${skipped}個の重複は無視されました）` : ''}`
+        });
       } else {
-        importGrammar(data as Grammar[]);
-        setMessage({ type: 'success', text: `${data.length}個の文法をインポートしました` });
+        const { added, skipped } = importGrammar(data as Grammar[]);
+        setMessage({
+          type: 'success',
+          text: `${added}個の文法をインポートしました${skipped > 0 ? `（${skipped}個の重複は無視されました）` : ''}`
+        });
       }
 
       setJsonInput('');
@@ -146,11 +152,11 @@ export default function ImportPage() {
           <div className="flex-1 overflow-y-auto min-h-0 pr-1 scrollbar-custom">
             <div className="bg-white/5 rounded-lg p-4 text-white/80 text-sm">
               <h4 className="font-bold mb-3">フォーマット:</h4>
+              <p className="text-xs text-white/60 mb-3">IDは不要です。インポート時に自動生成され、取り込み日時が保存されます。</p>
               {importType === 'words' ? (
                 <pre className="overflow-x-auto">
 {`[
   {
-    "id": "w001",
     "kanji": "漢字",
     "kana": "かな",
     "romaji": "romaji",
@@ -171,7 +177,6 @@ export default function ImportPage() {
                 <pre className="overflow-x-auto">
 {`[
   {
-    "id": "g001",
     "pattern": "文型",
     "meaning": "意味",
     "explanation": "説明",

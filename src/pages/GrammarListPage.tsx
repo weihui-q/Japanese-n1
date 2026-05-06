@@ -229,6 +229,9 @@ function GrammarCard({ grammar }: { grammar: Grammar }) {
               ))}
             </div>
           )}
+          {grammar.importedAt && (
+            <p className="text-xs text-white/60">インポート: {new Date(grammar.importedAt).toLocaleString()}</p>
+          )}
         </div>
       )}
     </div>
