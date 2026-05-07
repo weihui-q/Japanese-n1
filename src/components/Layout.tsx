@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import { useAppStore } from '../store/appStore';
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,6 +10,8 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   const location = useLocation();
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const backgroundColor = useAppStore(state => state.backgroundColor);
+  const setBackgroundColor = useAppStore(state => state.setBackgroundColor);
 
   const navItems = [
     { path: '/', label: 'ホーム', icon: '🏠' },
@@ -22,7 +25,7 @@ export default function Layout({ children }: LayoutProps) {
   ];
 
   return (
-    <div className="min-h-screen flex bg-slate-950 text-white">
+    <div className={`min-h-screen flex ${backgroundColor} text-white`}>
       {/* 左侧边栏 */}
       <aside
         className={`fixed left-0 top-0 h-full bg-white/10 backdrop-blur-md border-r border-white/20 transition-all duration-300 z-50 ${
@@ -81,10 +84,31 @@ export default function Layout({ children }: LayoutProps) {
       >
         {/* 顶部栏 */}
         <header className="bg-white/10 backdrop-blur-md border-b border-white/20 flex-shrink-0">
-          <div className="px-6 py-4">
+          <div className="px-6 py-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <h1 className="text-white text-2xl font-bold">
               {navItems.find(item => item.path === location.pathname)?.label || 'JLPT N1 学習アプリ'}
             </h1>
+            <div className="flex flex-wrap gap-2 items-center text-sm text-white/80">
+              <span>背景色</span>
+              {([
+                { key: 'bg-slate-950', label: '標準' },
+                { key: 'bg-blue-950', label: '青' },
+                { key: 'bg-green-950', label: '緑' },
+                { key: 'bg-purple-950', label: '紫' }
+              ] as const).map(option => (
+                <button
+                  key={option.key}
+                  onClick={() => setBackgroundColor(option.key)}
+                  className={`px-3 py-1 rounded-md transition-all border ${
+                    backgroundColor === option.key
+                      ? 'border-white bg-white/20 text-white'
+                      : 'border-white/20 text-white/70 hover:bg-white/10 hover:text-white'
+                  }`}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
           </div>
         </header>
 

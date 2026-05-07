@@ -75,6 +75,10 @@ interface AppState {
   // 收藏関連
   toggleFavorite: (itemId: string, itemType: 'word' | 'grammar') => void;
   isFavorite: (itemId: string, itemType: 'word' | 'grammar') => boolean;
+
+  // 全局背景色
+  backgroundColor: string;
+  setBackgroundColor: (color: string) => void;
   
   // 統計
   getStats: () => StudyStats;
@@ -91,6 +95,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   favorites: [],
   isLoading: false,
   isInitialized: false,
+  backgroundColor: 'bg-slate-950',
 
   initialize: async () => {
     if (get().isInitialized) return;
@@ -100,11 +105,13 @@ export const useAppStore = create<AppState>((set, get) => ({
       await initDB();
       const progresses = await getAllProgress();
       const favorites: FavoriteItem[] = JSON.parse(localStorage.getItem('jlptFavorites') || '[]');
-      set({ progresses, favorites, isInitialized: true, isLoading: false });
+      const backgroundColor = localStorage.getItem('jlptBackgroundColor') || 'bg-slate-950';
+      set({ progresses, favorites, backgroundColor, isInitialized: true, isLoading: false });
     } catch (error) {
       console.error('初期化エラー:', error);
       const favorites: FavoriteItem[] = JSON.parse(localStorage.getItem('jlptFavorites') || '[]');
-      set({ favorites, isLoading: false, isInitialized: true });
+      const backgroundColor = localStorage.getItem('jlptBackgroundColor') || 'bg-slate-950';
+      set({ favorites, backgroundColor, isLoading: false, isInitialized: true });
     }
   },
 
@@ -159,6 +166,11 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   isFavorite: (itemId: string, itemType: 'word' | 'grammar') => {
     return get().favorites.some(f => f.itemId === itemId && f.itemType === itemType);
+  },
+
+  setBackgroundColor: (color: string) => {
+    localStorage.setItem('jlptBackgroundColor', color);
+    set({ backgroundColor: color });
   },
 
   getStats: () => {

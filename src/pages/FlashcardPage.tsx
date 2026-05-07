@@ -14,8 +14,16 @@ export default function FlashcardPage() {
   const [studyType, setStudyType] = useState<'all' | 'words' | 'grammar'>('all');
   const [studyMode, setStudyMode] = useState<'new' | 'review'>('new');
   const [studyItems, setStudyItems] = useState<Array<Word | Grammar>>([]);
+  const [cardBg, setCardBg] = useState('bg-white/10');
   const toggleFavorite = useAppStore(state => state.toggleFavorite);
   const favorites = useAppStore(state => state.favorites);
+
+  useEffect(() => {
+    const savedBg = window.localStorage.getItem('flashcardBackground');
+    if (savedBg) {
+      setCardBg(savedBg);
+    }
+  }, []);
 
   useEffect(() => {
     let items: Array<Word | Grammar> = [];
@@ -45,6 +53,10 @@ export default function FlashcardPage() {
     setCurrentIndex(0);
     setIsFlipped(false);
   }, [studyType, studyMode, words, grammar, progresses]);
+
+  useEffect(() => {
+    window.localStorage.setItem('flashcardBackground', cardBg);
+  }, [cardBg]);
 
   const currentItem = studyItems[currentIndex];
   const currentItemType = currentItem ? ('kanji' in currentItem ? 'word' : 'grammar') : 'word';
@@ -93,6 +105,27 @@ export default function FlashcardPage() {
   return (
     <div className="space-y-4 h-full overflow-y-auto">
       <h1 className="text-3xl font-bold text-white mb-4">フラッシュカード</h1>
+
+      {/* 背景色設定 */}
+      <div className="flex flex-wrap gap-3 items-center mb-2">
+        <span className="text-white/80 text-sm">背景色:</span>
+        {([
+          { key: 'bg-white/10', label: '標準' },
+          { key: 'bg-blue-500/20', label: '青' },
+          { key: 'bg-green-500/20', label: '緑' },
+          { key: 'bg-purple-500/20', label: '紫' }
+        ] as const).map(option => (
+          <button
+            key={option.key}
+            onClick={() => setCardBg(option.key)}
+            className={`px-4 py-2 rounded-lg text-sm transition-all border ${
+              cardBg === option.key ? 'border-white text-white bg-white/20' : 'border-white/20 text-white/70 hover:bg-white/10'
+            }`}
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
 
       {/* 学習タイプとモード選択 */}
       <div className="flex justify-between items-center">
@@ -166,7 +199,7 @@ export default function FlashcardPage() {
               {/* 表面 */}
               {!isFlipped && currentItem && (
                 <div
-                  className="absolute inset-0 bg-white/10 backdrop-blur-md rounded-2xl p-8 flex flex-col items-center justify-center text-white border-2 border-white/30"
+                  className={`absolute inset-0 ${cardBg} backdrop-blur-md rounded-2xl p-8 flex flex-col items-center justify-center text-white border-2 border-white/30`}
                   style={{ backfaceVisibility: 'hidden' }}
                 >
                   {'kanji' in currentItem ? (
@@ -186,7 +219,7 @@ export default function FlashcardPage() {
               {/* 裏面 */}
               {isFlipped && currentItem && (
                 <div
-                  className="absolute inset-0 bg-white/20 backdrop-blur-md rounded-2xl p-8 flex flex-col items-center justify-center text-white border-2 border-white/30"
+                  className={`absolute inset-0 ${cardBg} backdrop-blur-md rounded-2xl p-8 flex flex-col items-center justify-center text-white border-2 border-white/30`}
                   style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
                 >
                   {'kanji' in currentItem ? (
